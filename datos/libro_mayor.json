@@ -1,0 +1,38 @@
+{
+    "sede" : {
+        "id_sede" : "SD-C",
+        "direccion": "San Nicolas de los Garzas, Nuevo Leon",
+        "corporativo" : "C-{id_sede}",
+        "operaciones" : "O-{id_sede}",
+        "equipo" : "E-{id_sede}"
+    },
+    "locales" : {
+        "local-01" : {
+            "id_local" : "LOC-01",
+            "nombre" : "VIAUTO MEDEROS",
+            "direccion" : "Monterry, Nuevo Leon",
+            "directorio" : {
+                "horarios" : "D-H-{id_local}",
+                "repertorio" : "D-R-{id_local}",
+                "personal" : "D-P-{id_local}",
+                "departamentos" : "D-D-{id_local}",
+                "contactos" : "D-C-{id_local}"
+                }
+            }
+    },
+    "talleres" : {
+        "taller-01" : {
+            "id_taller" : "TAL-01",
+            "nombre" : "taller linda vista",
+            "direccion" : "guadalupe, nuevo leon",
+            "directorio" : {
+                "horarios" : "D-H-{id_taller}",
+                "servicios" : "D-S-{id_taller}",
+                "profesionales" : "D-P-{id_taller}",
+                "departamentos" : "D-D-{id_taller}",
+                "contactos" : "D-C-{id_taller}"
+            }
+        }
+    }
+
+}
