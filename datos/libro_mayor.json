@@ -1,38 +1,145 @@
 {
-    "sede" : {
-        "id_sede" : "SD-C",
+    "sede": {
+        "id_sede": "SD-C",
         "direccion": "San Nicolas de los Garzas, Nuevo Leon",
-        "corporativo" : "C-{id_sede}",
-        "operaciones" : "O-{id_sede}",
-        "equipo" : "E-{id_sede}"
+        "corporativo": "C-{id_sede}",
+        "operaciones": "O-{id_sede}",
+        "equipo": "E-{id_sede}"
     },
-    "locales" : {
-        "local-01" : {
-            "id_local" : "LOC-01",
-            "nombre" : "VIAUTO MEDEROS",
-            "direccion" : "Monterry, Nuevo Leon",
-            "directorio" : {
-                "horarios" : "D-H-{id_local}",
-                "repertorio" : "D-R-{id_local}",
-                "personal" : "D-P-{id_local}",
-                "departamentos" : "D-D-{id_local}",
-                "contactos" : "D-C-{id_local}"
-                }
+    "locales": {
+        "local-01": {
+            "id_local": "LOC-01",
+            "nombre": "VIAUTO MEDEROS",
+            "direccion": "Monterry, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_local}",
+                "repertorio": "D-R-{id_local}",
+                "personal": "D-P-{id_local}",
+                "departamentos": "D-D-{id_local}",
+                "contactos": "D-C-{id_local}"
             }
+        }
     },
-    "talleres" : {
-        "taller-01" : {
-            "id_taller" : "TAL-01",
-            "nombre" : "taller linda vista",
-            "direccion" : "guadalupe, nuevo leon",
-            "directorio" : {
-                "horarios" : "D-H-{id_taller}",
-                "servicios" : "D-S-{id_taller}",
-                "profesionales" : "D-P-{id_taller}",
-                "departamentos" : "D-D-{id_taller}",
-                "contactos" : "D-C-{id_taller}"
+    "talleres": {
+        "taller-01": {
+            "id_taller": "TAL-01",
+            "nombre": "taller linda vista",
+            "direccion": "guadalupe, nuevo leon",
+            "directorio": {
+                "horarios": "D-H-{id_taller}",
+                "servicios": "D-S-{id_taller}",
+                "profesionales": "D-P-{id_taller}",
+                "departamentos": "D-D-{id_taller}",
+                "contactos": "D-C-{id_taller}"
+            }
+        },
+        "taller-02": {
+            "id_taller": "TAL-02",
+            "nombre": "Taller Anáhuac",
+            "direccion": "San Nicolas, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_taller}",
+                "servicios": "D-S-{id_taller}",
+                "profesionales": "D-P-{id_taller}",
+                "departamentos": "D-D-{id_taller}",
+                "contactos": "D-C-{id_taller}"
+            }
+        },
+        "taller-03": {
+            "id_taller": "TAL-03",
+            "nombre": "Taller Las Puentes",
+            "direccion": "San Nicolas, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_taller}",
+                "servicios": "D-S-{id_taller}",
+                "profesionales": "D-P-{id_taller}",
+                "departamentos": "D-D-{id_taller}",
+                "contactos": "D-C-{id_taller}"
+            }
+        },
+        "taller-04": {
+            "id_taller": "TAL-04",
+            "nombre": "Taller Cumbres",
+            "direccion": "Monterrey, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_taller}",
+                "servicios": "D-S-{id_taller}",
+                "profesionales": "D-P-{id_taller}",
+                "departamentos": "D-D-{id_taller}",
+                "contactos": "D-C-{id_taller}"
+            }
+        },
+        "taller-05": {
+            "id_taller": "TAL-05",
+            "nombre": "Taller Mitras Sur",
+            "direccion": "Monterrey, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_taller}",
+                "servicios": "D-S-{id_taller}",
+                "profesionales": "D-P-{id_taller}",
+                "departamentos": "D-D-{id_taller}",
+                "contactos": "D-C-{id_taller}"
+            }
+        },
+        "taller-06": {
+            "id_taller": "TAL-06",
+            "nombre": "Taller Contry",
+            "direccion": "Guadalupe, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_taller}",
+                "servicios": "D-S-{id_taller}",
+                "profesionales": "D-P-{id_taller}",
+                "departamentos": "D-D-{id_taller}",
+                "contactos": "D-C-{id_taller}"
+            }
+        },
+        "taller-07": {
+            "id_taller": "TAL-07",
+            "nombre": "Taller Tres Caminos",
+            "direccion": "Guadalupe, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_taller}",
+                "servicios": "D-S-{id_taller}",
+                "profesionales": "D-P-{id_taller}",
+                "departamentos": "D-D-{id_taller}",
+                "contactos": "D-C-{id_taller}"
+            }
+        },
+        "taller-08": {
+            "id_taller": "TAL-08",
+            "nombre": "Taller Huinala",
+            "direccion": "Apodaca, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_taller}",
+                "servicios": "D-S-{id_taller}",
+                "profesionales": "D-P-{id_taller}",
+                "departamentos": "D-D-{id_taller}",
+                "contactos": "D-C-{id_taller}"
+            }
+        },
+        "taller-09": {
+            "id_taller": "TAL-09",
+            "nombre": "Taller San Roque",
+            "direccion": "Juarez, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_taller}",
+                "servicios": "D-S-{id_taller}",
+                "profesionales": "D-P-{id_taller}",
+                "departamentos": "D-D-{id_taller}",
+                "contactos": "D-C-{id_taller}"
+            }
+        },
+        "taller-010": {
+            "id_taller": "TAL-010",
+            "nombre": "Taller Vistas Rio",
+            "direccion": "Juarez, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_taller}",
+                "servicios": "D-S-{id_taller}",
+                "profesionales": "D-P-{id_taller}",
+                "departamentos": "D-D-{id_taller}",
+                "contactos": "D-C-{id_taller}"
             }
         }
     }
-
 }
