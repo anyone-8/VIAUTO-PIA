@@ -18,6 +18,114 @@
                 "departamentos": "D-D-{id_local}",
                 "contactos": "D-C-{id_local}"
             }
+        },
+        "local-02": {
+            "id_local": "LOC-02",
+            "nombre": "VIAUTO CONTRY",
+            "direccion": "Monterrey, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_local}",
+                "repertorio": "D-R-{id_local}",
+                "personal": "D-P-{id_local}",
+                "departamentos": "D-D-{id_local}",
+                "contactos": "D-C-{id_local}"
+            }
+        },
+        "local-03": {
+            "id_local": "LOC-03",
+            "nombre": "VIAUTO CUMBRES",
+            "direccion": "Monterrey, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_local}",
+                "repertorio": "D-R-{id_local}",
+                "personal": "D-P-{id_local}",
+                "departamentos": "D-D-{id_local}",
+                "contactos": "D-C-{id_local}"
+            }
+        },
+        "local-04": {
+            "id_local": "LOC-04",
+            "nombre": "VIAUTO SAN JERONIMO",
+            "direccion": "Monterrey, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_local}",
+                "repertorio": "D-R-{id_local}",
+                "personal": "D-P-{id_local}",
+                "departamentos": "D-D-{id_local}",
+                "contactos": "D-C-{id_local}"
+            }
+        },
+        "local-05": {
+            "id_local": "LOC-05",
+            "nombre": "VIAUTO APODACA",
+            "direccion": "Apodaca, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_local}",
+                "repertorio": "D-R-{id_local}",
+                "personal": "D-P-{id_local}",
+                "departamentos": "D-D-{id_local}",
+                "contactos": "D-C-{id_local}"
+            }
+        },
+        "local-06": {
+            "id_local": "LOC-06",
+            "nombre": "VIAUTO SANTA CATARINA",
+            "direccion": "Santa Catarina, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_local}",
+                "repertorio": "D-R-{id_local}",
+                "personal": "D-P-{id_local}",
+                "departamentos": "D-D-{id_local}",
+                "contactos": "D-C-{id_local}"
+            }
+        },
+        "local-07": {
+            "id_local": "LOC-07",
+            "nombre": "VIAUTO SENDERO",
+            "direccion": "General Escobedo, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_local}",
+                "repertorio": "D-R-{id_local}",
+                "personal": "D-P-{id_local}",
+                "departamentos": "D-D-{id_local}",
+                "contactos": "D-C-{id_local}"
+            }
+        },
+        "local-08": {
+            "id_local": "LOC-08",
+            "nombre": "VIAUTO GUADALUPE",
+            "direccion": "Guadalupe, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_local}",
+                "repertorio": "D-R-{id_local}",
+                "personal": "D-P-{id_local}",
+                "departamentos": "D-D-{id_local}",
+                "contactos": "D-C-{id_local}"
+            }
+        },
+        "local-09": {
+            "id_local": "LOC-09",
+            "nombre": "VIAUTO VALLE ORIENTE",
+            "direccion": "San Pedro Garza Garcia, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_local}",
+                "repertorio": "D-R-{id_local}",
+                "personal": "D-P-{id_local}",
+                "departamentos": "D-D-{id_local}",
+                "contactos": "D-C-{id_local}"
+            }
+        },
+        "local-010": {
+            "id_local": "LOC-010",
+            "nombre": "VIAUTO JUAREZ",
+            "direccion": "Juarez, Nuevo Leon",
+            "directorio": {
+                "horarios": "D-H-{id_local}",
+                "repertorio": "D-R-{id_local}",
+                "personal": "D-P-{id_local}",
+                "departamentos": "D-D-{id_local}",
+                "contactos": "D-C-{id_local}"
+            }
         }
     },
     "talleres": {
@@ -35,7 +143,7 @@
         },
         "taller-02": {
             "id_taller": "TAL-02",
-            "nombre": "Taller Anáhuac",
+            "nombre": "Taller An\u00e1huac",
             "direccion": "San Nicolas, Nuevo Leon",
             "directorio": {
                 "horarios": "D-H-{id_taller}",
