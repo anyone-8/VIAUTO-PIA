@@ -2,6 +2,7 @@
 import os
 import json
 from backend.crud_talleres import añadir_taller
+from backend.crud_locales import añadir_local
 
 with open("datos/libro_mayor.json", "r", encoding="utf-8") as f:
     data = json.load(f)
