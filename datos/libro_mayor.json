@@ -7,104 +7,104 @@
         "equipo": "E-{id_sede}"
     },
     "locales": {
-        "local-01": {
+        "local-1": {
             "id_local": "LOC-1",
             "nombre": "VIAUTO MEDEROS",
             "direccion": "Monterry, Nuevo Leon"
         },
-        "local-02": {
+        "local-2": {
             "id_local": "LOC-2",
             "nombre": "VIAUTO CONTRY",
             "direccion": "Monterrey, Nuevo Leon"
         },
-        "local-03": {
+        "local-3": {
             "id_local": "LOC-3",
             "nombre": "VIAUTO CUMBRES",
             "direccion": "Monterrey, Nuevo Leon"
         },
-        "local-04": {
+        "local-4": {
             "id_local": "LOC-4",
             "nombre": "VIAUTO SAN JERONIMO",
             "direccion": "Monterrey, Nuevo Leon"
         },
-        "local-05": {
+        "local-5": {
             "id_local": "LOC-5",
             "nombre": "VIAUTO APODACA",
             "direccion": "Apodaca, Nuevo Leon"
         },
-        "local-06": {
+        "local-6": {
             "id_local": "LOC-6",
             "nombre": "VIAUTO SANTA CATARINA",
             "direccion": "Santa Catarina, Nuevo Leon"
         },
-        "local-07": {
+        "local-7": {
             "id_local": "LOC-7",
             "nombre": "VIAUTO SENDERO",
             "direccion": "General Escobedo, Nuevo Leon"
         },
-        "local-08": {
+        "local-8": {
             "id_local": "LOC-8",
             "nombre": "VIAUTO GUADALUPE",
             "direccion": "Guadalupe, Nuevo Leon"
         },
-        "local-09": {
+        "local-9": {
             "id_local": "LOC-9",
             "nombre": "VIAUTO VALLE ORIENTE",
             "direccion": "San Pedro Garza Garcia, Nuevo Leon"
         },
-        "local-010": {
+        "local-10": {
             "id_local": "LOC-10",
             "nombre": "VIAUTO JUAREZ",
             "direccion": "Juarez, Nuevo Leon"
         }
     },
     "talleres": {
-        "taller-01": {
+        "taller-1": {
             "id_taller": "TAL-1",
             "nombre": "taller linda vista",
             "direccion": "guadalupe, nuevo leon"
         },
-        "taller-02": {
+        "taller-2": {
             "id_taller": "TAL-2",
             "nombre": "Taller An\u00e1huac",
             "direccion": "San Nicolas, Nuevo Leon"
         },
-        "taller-03": {
+        "taller-3": {
             "id_taller": "TAL-3",
             "nombre": "Taller Las Puentes",
             "direccion": "San Nicolas, Nuevo Leon"
         },
-        "taller-04": {
+        "taller-4": {
             "id_taller": "TAL-4",
             "nombre": "Taller Cumbres",
             "direccion": "Monterrey, Nuevo Leon"
         },
-        "taller-05": {
+        "taller-5": {
             "id_taller": "TAL-5",
             "nombre": "Taller Mitras Sur",
             "direccion": "Monterrey, Nuevo Leon"
         },
-        "taller-06": {
+        "taller-6": {
             "id_taller": "TAL-6",
             "nombre": "Taller Contry",
             "direccion": "Guadalupe, Nuevo Leon"
         },
-        "taller-07": {
+        "taller-7": {
             "id_taller": "TAL-7",
             "nombre": "Taller Tres Caminos",
             "direccion": "Guadalupe, Nuevo Leon"
         },
-        "taller-08": {
+        "taller-8": {
             "id_taller": "TAL-8",
             "nombre": "Taller Huinala",
             "direccion": "Apodaca, Nuevo Leon"
         },
-        "taller-09": {
+        "taller-9": {
             "id_taller": "TAL-9",
             "nombre": "Taller San Roque",
             "direccion": "Juarez, Nuevo Leon"
         },
-        "taller-010": {
+        "taller-10": {
             "id_taller": "TAL-10",
             "nombre": "Taller Vistas Rio",
             "direccion": "Juarez, Nuevo Leon"
