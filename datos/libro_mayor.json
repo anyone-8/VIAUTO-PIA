@@ -8,246 +8,122 @@
     },
     "locales": {
         "local-01": {
-            "id_local": "LOC-01",
+            "id_local": "LOC-1",
             "nombre": "VIAUTO MEDEROS",
-            "direccion": "Monterry, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_local}",
-                "repertorio": "D-R-{id_local}",
-                "personal": "D-P-{id_local}",
-                "departamentos": "D-D-{id_local}",
-                "contactos": "D-C-{id_local}"
-            }
+            "direccion": "Monterry, Nuevo Leon"
         },
         "local-02": {
-            "id_local": "LOC-02",
+            "id_local": "LOC-2",
             "nombre": "VIAUTO CONTRY",
-            "direccion": "Monterrey, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_local}",
-                "repertorio": "D-R-{id_local}",
-                "personal": "D-P-{id_local}",
-                "departamentos": "D-D-{id_local}",
-                "contactos": "D-C-{id_local}"
-            }
+            "direccion": "Monterrey, Nuevo Leon"
         },
         "local-03": {
-            "id_local": "LOC-03",
+            "id_local": "LOC-3",
             "nombre": "VIAUTO CUMBRES",
-            "direccion": "Monterrey, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_local}",
-                "repertorio": "D-R-{id_local}",
-                "personal": "D-P-{id_local}",
-                "departamentos": "D-D-{id_local}",
-                "contactos": "D-C-{id_local}"
-            }
+            "direccion": "Monterrey, Nuevo Leon"
         },
         "local-04": {
-            "id_local": "LOC-04",
+            "id_local": "LOC-4",
             "nombre": "VIAUTO SAN JERONIMO",
-            "direccion": "Monterrey, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_local}",
-                "repertorio": "D-R-{id_local}",
-                "personal": "D-P-{id_local}",
-                "departamentos": "D-D-{id_local}",
-                "contactos": "D-C-{id_local}"
-            }
+            "direccion": "Monterrey, Nuevo Leon"
         },
         "local-05": {
-            "id_local": "LOC-05",
+            "id_local": "LOC-5",
             "nombre": "VIAUTO APODACA",
-            "direccion": "Apodaca, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_local}",
-                "repertorio": "D-R-{id_local}",
-                "personal": "D-P-{id_local}",
-                "departamentos": "D-D-{id_local}",
-                "contactos": "D-C-{id_local}"
-            }
+            "direccion": "Apodaca, Nuevo Leon"
         },
         "local-06": {
-            "id_local": "LOC-06",
+            "id_local": "LOC-6",
             "nombre": "VIAUTO SANTA CATARINA",
-            "direccion": "Santa Catarina, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_local}",
-                "repertorio": "D-R-{id_local}",
-                "personal": "D-P-{id_local}",
-                "departamentos": "D-D-{id_local}",
-                "contactos": "D-C-{id_local}"
-            }
+            "direccion": "Santa Catarina, Nuevo Leon"
         },
         "local-07": {
-            "id_local": "LOC-07",
+            "id_local": "LOC-7",
             "nombre": "VIAUTO SENDERO",
-            "direccion": "General Escobedo, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_local}",
-                "repertorio": "D-R-{id_local}",
-                "personal": "D-P-{id_local}",
-                "departamentos": "D-D-{id_local}",
-                "contactos": "D-C-{id_local}"
-            }
+            "direccion": "General Escobedo, Nuevo Leon"
         },
         "local-08": {
-            "id_local": "LOC-08",
+            "id_local": "LOC-8",
             "nombre": "VIAUTO GUADALUPE",
-            "direccion": "Guadalupe, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_local}",
-                "repertorio": "D-R-{id_local}",
-                "personal": "D-P-{id_local}",
-                "departamentos": "D-D-{id_local}",
-                "contactos": "D-C-{id_local}"
-            }
+            "direccion": "Guadalupe, Nuevo Leon"
         },
         "local-09": {
-            "id_local": "LOC-09",
+            "id_local": "LOC-9",
             "nombre": "VIAUTO VALLE ORIENTE",
-            "direccion": "San Pedro Garza Garcia, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_local}",
-                "repertorio": "D-R-{id_local}",
-                "personal": "D-P-{id_local}",
-                "departamentos": "D-D-{id_local}",
-                "contactos": "D-C-{id_local}"
-            }
+            "direccion": "San Pedro Garza Garcia, Nuevo Leon"
         },
         "local-010": {
-            "id_local": "LOC-010",
+            "id_local": "LOC-10",
             "nombre": "VIAUTO JUAREZ",
-            "direccion": "Juarez, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_local}",
-                "repertorio": "D-R-{id_local}",
-                "personal": "D-P-{id_local}",
-                "departamentos": "D-D-{id_local}",
-                "contactos": "D-C-{id_local}"
-            }
+            "direccion": "Juarez, Nuevo Leon"
         }
     },
     "talleres": {
         "taller-01": {
-            "id_taller": "TAL-01",
+            "id_taller": "TAL-1",
             "nombre": "taller linda vista",
-            "direccion": "guadalupe, nuevo leon",
-            "directorio": {
-                "horarios": "D-H-{id_taller}",
-                "servicios": "D-S-{id_taller}",
-                "profesionales": "D-P-{id_taller}",
-                "departamentos": "D-D-{id_taller}",
-                "contactos": "D-C-{id_taller}"
-            }
+            "direccion": "guadalupe, nuevo leon"
         },
         "taller-02": {
-            "id_taller": "TAL-02",
+            "id_taller": "TAL-2",
             "nombre": "Taller An\u00e1huac",
-            "direccion": "San Nicolas, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_taller}",
-                "servicios": "D-S-{id_taller}",
-                "profesionales": "D-P-{id_taller}",
-                "departamentos": "D-D-{id_taller}",
-                "contactos": "D-C-{id_taller}"
-            }
+            "direccion": "San Nicolas, Nuevo Leon"
         },
         "taller-03": {
-            "id_taller": "TAL-03",
+            "id_taller": "TAL-3",
             "nombre": "Taller Las Puentes",
-            "direccion": "San Nicolas, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_taller}",
-                "servicios": "D-S-{id_taller}",
-                "profesionales": "D-P-{id_taller}",
-                "departamentos": "D-D-{id_taller}",
-                "contactos": "D-C-{id_taller}"
-            }
+            "direccion": "San Nicolas, Nuevo Leon"
         },
         "taller-04": {
-            "id_taller": "TAL-04",
+            "id_taller": "TAL-4",
             "nombre": "Taller Cumbres",
-            "direccion": "Monterrey, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_taller}",
-                "servicios": "D-S-{id_taller}",
-                "profesionales": "D-P-{id_taller}",
-                "departamentos": "D-D-{id_taller}",
-                "contactos": "D-C-{id_taller}"
-            }
+            "direccion": "Monterrey, Nuevo Leon"
         },
         "taller-05": {
-            "id_taller": "TAL-05",
+            "id_taller": "TAL-5",
             "nombre": "Taller Mitras Sur",
-            "direccion": "Monterrey, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_taller}",
-                "servicios": "D-S-{id_taller}",
-                "profesionales": "D-P-{id_taller}",
-                "departamentos": "D-D-{id_taller}",
-                "contactos": "D-C-{id_taller}"
-            }
+            "direccion": "Monterrey, Nuevo Leon"
         },
         "taller-06": {
-            "id_taller": "TAL-06",
+            "id_taller": "TAL-6",
             "nombre": "Taller Contry",
-            "direccion": "Guadalupe, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_taller}",
-                "servicios": "D-S-{id_taller}",
-                "profesionales": "D-P-{id_taller}",
-                "departamentos": "D-D-{id_taller}",
-                "contactos": "D-C-{id_taller}"
-            }
+            "direccion": "Guadalupe, Nuevo Leon"
         },
         "taller-07": {
-            "id_taller": "TAL-07",
+            "id_taller": "TAL-7",
             "nombre": "Taller Tres Caminos",
-            "direccion": "Guadalupe, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_taller}",
-                "servicios": "D-S-{id_taller}",
-                "profesionales": "D-P-{id_taller}",
-                "departamentos": "D-D-{id_taller}",
-                "contactos": "D-C-{id_taller}"
-            }
+            "direccion": "Guadalupe, Nuevo Leon"
         },
         "taller-08": {
-            "id_taller": "TAL-08",
+            "id_taller": "TAL-8",
             "nombre": "Taller Huinala",
-            "direccion": "Apodaca, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_taller}",
-                "servicios": "D-S-{id_taller}",
-                "profesionales": "D-P-{id_taller}",
-                "departamentos": "D-D-{id_taller}",
-                "contactos": "D-C-{id_taller}"
-            }
+            "direccion": "Apodaca, Nuevo Leon"
         },
         "taller-09": {
-            "id_taller": "TAL-09",
+            "id_taller": "TAL-9",
             "nombre": "Taller San Roque",
-            "direccion": "Juarez, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_taller}",
-                "servicios": "D-S-{id_taller}",
-                "profesionales": "D-P-{id_taller}",
-                "departamentos": "D-D-{id_taller}",
-                "contactos": "D-C-{id_taller}"
-            }
+            "direccion": "Juarez, Nuevo Leon"
         },
         "taller-010": {
-            "id_taller": "TAL-010",
+            "id_taller": "TAL-10",
             "nombre": "Taller Vistas Rio",
-            "direccion": "Juarez, Nuevo Leon",
-            "directorio": {
-                "horarios": "D-H-{id_taller}",
-                "servicios": "D-S-{id_taller}",
-                "profesionales": "D-P-{id_taller}",
-                "departamentos": "D-D-{id_taller}",
-                "contactos": "D-C-{id_taller}"
-            }
+            "direccion": "Juarez, Nuevo Leon"
+        }
+    },
+    "directorios" : {
+        "D-locales" : {
+            "horarios" : "D-L-H-{id_local}",
+            "repertorio" : "D-L-R-{id_local}",
+            "personal" : "D-L-P-{id_local}",
+            "departamentos" : "D-L-D-{id_local}",
+            "contactos" : "D-L-C-{id_local}"
+        },
+        "D-talleres" : {
+            "horarios" : "D-T-H-{id_taller}",
+            "servicios" : "D-T-S-{id_taller}",
+            "profesionales" : "D-T-P-{id_taller}",
+            "departamentos" : "D-T-D-{id_taller}",
+            "contactos" : "D-T-C-{id_taller}"
         }
     }
 }
