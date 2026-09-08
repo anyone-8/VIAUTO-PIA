@@ -23,3 +23,6 @@ deberan poseer las siguientes competencias
 
 ### __ayuda__
 Tratare de brindar la mayor ayuda posible, pero se recomienda que cada quien avance en lo suyo junto a su pareja. Si requieren saber algo de backend o necesitan que el benackd haga algo en especifico la comunicacion sera importante, igualmente del otro lado. Se recomienda no cambiar, borrar o eliminar partes del github que no sean de su competencia y sin previo aviso
+
+### __Uso de IA__
+No se admite el uso de IA generativa para suplir las tareas de su rol. Se acepta el uso para aclaraciones o consultas privadas. En caso que se sospeche de su uso el integrante deberá explicar su código en un README junto con todo lo que se supone que realiza el codigo paso a paso.
