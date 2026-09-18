@@ -1,5 +1,6 @@
 #creamos una clase para calar su funcionamiento
 import json
+from .carpetas import crear_carpetas, borrar_carpetas
 
 class Libro_Mayor:
     #el corazon self es quien contiene todo nuestro diccionario
@@ -32,6 +33,7 @@ class Libro_Mayor:
     def añadir_taller(self, nombre, direccion):
         #nos aseguramos que creemos siempre un taller o en un espacio vacio
         #o en el siguiente disponible n + 1 siendo n el ultimo taller
+        funcion = "talleres"
         contador = 1
         while f"taller-{contador}" in self.data["talleres"]:
             contador += 1
@@ -49,14 +51,16 @@ class Libro_Mayor:
         }
 
         #se guarda en el json y, ademas, se devulve que se completo con exito
-        self.data["talleres"][clave] = nuevo_taller
+        self.data["talleres"].update(nuevo_taller)
         if self.guardar():
+            crear_carpetas(self.data, funcion, clave, id_taller)
             return "se guardo con exito"
         else:
             self.data["talleres"].pop(clave, None)
             return "no se pudo guardar el taller"
 
     def eliminar_taller(self, taller):
+        funcion = "talleres"
         if taller not in self.data["talleres"]:
             return "El taller no existe"
 
@@ -65,6 +69,7 @@ class Libro_Mayor:
         #comprobamos si se puede guardar el archivo
         if self.guardar():
             #se devuelve el dato eliminado
+            borrar_carpetas(self.data, funcion, taller)
             return eliminado
         #en caso no se pueda eliminar
         else:
@@ -101,6 +106,7 @@ class Libro_Mayor:
         return info
 
     def añadir_local(self, nombre, direccion):
+        funcion = "locales"
         #corrobora en usar el primer local desocupado o el n+1
         contador = 1
         while f"local-{contador}" in self.data["locales"]:
@@ -119,14 +125,16 @@ class Libro_Mayor:
         }
 
         #añade el local al json y lo guarda
-        self.data["locales"][clave] = nuevo_local
+        self.data["locales"].update(nuevo_local)
         if self.guardar():
+            crear_carpetas(self.data, funcion, clave, id_local)
             return "se guardo con exito"
         else:
             self.data["locales"].pop(clave, None)
             return "no se pudo guardar el archivo"
 
     def eliminar_local(self, local):
+        funcion = "locales"
         #se elimina el local de la memoria, se actualiza el json y se devuelve
         #el local eliminado
         if local not in self.data["locales"]:
@@ -134,6 +142,7 @@ class Libro_Mayor:
         
         eliminado = self.data["locales"].pop(local, None)
         if self.guardar():
+            borrar_carpetas(self.data, funcion, local)
             return eliminado
         else:
             self.data["locales"][local] = eliminado
