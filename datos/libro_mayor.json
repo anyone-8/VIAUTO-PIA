@@ -9,121 +9,121 @@
     "locales": {
         "local-1": {
             "id_local": "LOC-1",
-            "nombre": "VIAUTO MEDEROS",
-            "direccion": "Monterry, Nuevo Leon"
+            "nombre": "Viauto Mederos",
+            "direccion": "Monterrey, Nuevo Le\u00f3n"
         },
         "local-2": {
             "id_local": "LOC-2",
-            "nombre": "VIAUTO CONTRY",
-            "direccion": "Monterrey, Nuevo Leon"
+            "nombre": "Viauto Contry",
+            "direccion": "Monterrey, Nuevo Le\u00f3n"
         },
         "local-3": {
             "id_local": "LOC-3",
-            "nombre": "VIAUTO CUMBRES",
-            "direccion": "Monterrey, Nuevo Leon"
+            "nombre": "Viauto Cumbres",
+            "direccion": "Monterrey, Nuevo Le\u00f3n"
         },
         "local-4": {
             "id_local": "LOC-4",
-            "nombre": "VIAUTO SAN JERONIMO",
-            "direccion": "Monterrey, Nuevo Leon"
+            "nombre": "Viauto San Jeronimo",
+            "direccion": "Monterrey, Nuevo Le\u00f3n"
         },
         "local-5": {
             "id_local": "LOC-5",
-            "nombre": "VIAUTO APODACA",
-            "direccion": "Apodaca, Nuevo Leon"
+            "nombre": "Viauto Apodaca",
+            "direccion": "Apodaca, Nuevo Le\u00f3n"
         },
         "local-6": {
             "id_local": "LOC-6",
-            "nombre": "VIAUTO SANTA CATARINA",
-            "direccion": "Santa Catarina, Nuevo Leon"
+            "nombre": "Viauto Santa Catarina",
+            "direccion": "Santa Catarina, Nuevo Le\u00f3n"
         },
         "local-7": {
             "id_local": "LOC-7",
-            "nombre": "VIAUTO SENDERO",
-            "direccion": "General Escobedo, Nuevo Leon"
+            "nombre": "Viauto sendero",
+            "direccion": "General Escobedo, Nuevo Le\u00f3n"
         },
         "local-8": {
             "id_local": "LOC-8",
-            "nombre": "VIAUTO GUADALUPE",
-            "direccion": "Guadalupe, Nuevo Leon"
+            "nombre": "Viauto Guadalupe",
+            "direccion": "Guadalupe, Nuevo Le\u00f3n"
         },
         "local-9": {
             "id_local": "LOC-9",
-            "nombre": "VIAUTO VALLE ORIENTE",
-            "direccion": "San Pedro Garza Garcia, Nuevo Leon"
+            "nombre": "Viauto Valle Oriente",
+            "direccion": "San Pedro Garza Garc\u00eda, Nuevo Le\u00f3n"
         },
         "local-10": {
             "id_local": "LOC-10",
-            "nombre": "VIAUTO JUAREZ",
-            "direccion": "Juarez, Nuevo Leon"
+            "nombre": "Viauto Ju\u00e1rez",
+            "direccion": "Ju\u00e1rez, Nuevo Le\u00f3n"
         }
     },
     "talleres": {
         "taller-1": {
             "id_taller": "TAL-1",
-            "nombre": "taller linda vista",
-            "direccion": "guadalupe, nuevo leon"
+            "nombre": "Taller Linda Vista",
+            "direccion": "Guadalupe, Nuevo Le\u00f3n"
         },
         "taller-2": {
             "id_taller": "TAL-2",
             "nombre": "Taller An\u00e1huac",
-            "direccion": "San Nicolas, Nuevo Leon"
+            "direccion": "San Nicol\u00e1s de los Garza, Nuevo le\u00f3n"
         },
         "taller-3": {
             "id_taller": "TAL-3",
             "nombre": "Taller Las Puentes",
-            "direccion": "San Nicolas, Nuevo Leon"
+            "direccion": "San Nicol\u00e1s de los Garza, Nuevo le\u00f3n"
         },
         "taller-4": {
             "id_taller": "TAL-4",
             "nombre": "Taller Cumbres",
-            "direccion": "Monterrey, Nuevo Leon"
+            "direccion": "Monterrey, Nuevo Le\u00f3n"
         },
         "taller-5": {
             "id_taller": "TAL-5",
             "nombre": "Taller Mitras Sur",
-            "direccion": "Monterrey, Nuevo Leon"
+            "direccion": "Monterrey, Nuevo Le\u00f3n"
         },
         "taller-6": {
             "id_taller": "TAL-6",
             "nombre": "Taller Contry",
-            "direccion": "Guadalupe, Nuevo Leon"
+            "direccion": "Guadalupe, Nuevo Le\u00f3n"
         },
         "taller-7": {
             "id_taller": "TAL-7",
             "nombre": "Taller Tres Caminos",
-            "direccion": "Guadalupe, Nuevo Leon"
+            "direccion": "Guadalupe, Nuevo Le\u00f3n"
         },
         "taller-8": {
             "id_taller": "TAL-8",
-            "nombre": "Taller Huinala",
-            "direccion": "Apodaca, Nuevo Leon"
+            "nombre": "Taller Huinal\u00e1",
+            "direccion": "Apodaca, Nuevo Le\u00f3n"
         },
         "taller-9": {
             "id_taller": "TAL-9",
             "nombre": "Taller San Roque",
-            "direccion": "Juarez, Nuevo Leon"
+            "direccion": "ju\u00e1rez, Nuevo Le\u00f3n"
         },
         "taller-10": {
             "id_taller": "TAL-10",
-            "nombre": "Taller Vistas Rio",
-            "direccion": "Juarez, Nuevo Leon"
+            "nombre": "Taller Vistas del R\u00edo",
+            "direccion": "Ju\u00e1rez, Nuevo Le\u00f3n"
         }
     },
-    "directorios" : {
-        "D-locales" : {
-            "horarios" : "D-L-H-{id_local}",
-            "repertorio" : "D-L-R-{id_local}",
-            "personal" : "D-L-P-{id_local}",
-            "departamentos" : "D-L-D-{id_local}",
-            "contactos" : "D-L-C-{id_local}"
+    "directorios": {
+        "D-locales": {
+            "horarios": "D-L-H-{id_local}",
+            "repertorio": "D-L-R-{id_local}",
+            "personal": "D-L-P-{id_local}",
+            "departamentos": "D-L-D-{id_local}",
+            "contactos": "D-L-C-{id_local}"
         },
-        "D-talleres" : {
-            "horarios" : "D-T-H-{id_taller}",
-            "servicios" : "D-T-S-{id_taller}",
-            "profesionales" : "D-T-P-{id_taller}",
-            "departamentos" : "D-T-D-{id_taller}",
-            "contactos" : "D-T-C-{id_taller}"
+        "D-talleres": {
+            "horarios": "D-T-H-{id_taller}",
+            "servicios": "D-T-S-{id_taller}",
+            "profesionales": "D-T-P-{id_taller}",
+            "departamentos": "D-T-D-{id_taller}",
+            "contactos": "D-T-C-{id_taller}"
         }
     }
 }
