@@ -1,0 +1,16 @@
+{
+   "usuarios": {
+      "usuario-1": {
+         "id_usuario": "U-1",
+         "nombre": "Andy",
+         "contraseña": "Andy1234"
+      }
+   },
+   "administradores": {
+      "administrador-1": {
+         "id_administrador": "A-1",
+         "nombre": "Yair",
+         "contraseña": "Yair1234"
+      }
+   }
+}
