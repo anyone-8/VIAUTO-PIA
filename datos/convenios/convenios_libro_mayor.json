@@ -1,0 +1,21 @@
+{
+    "Nissan": {
+        "versa_1.6_ADVANCE": {
+            "marca": "Nissan",
+            "modelo": "versa_1,6_ADVANCE",
+            "precio": 140999,
+            "a\u00f1o_de_fabricacion": 2018,
+            "caballos_de_fuerza": 106,
+            "capacidad": 5,
+            "peso": 1465,
+            "consumo_conbinado": 5.9,
+            "dimensiones": {
+                "largo": 4.495,
+                "ancho": 1.74,
+                "alto": 1.475
+            },
+            "descripcion": "Seminuevo con \u00fanicamente 12500km. Equipa transmisi\u00f3n autom\u00e1tica, control de crucero, encendido con bot\u00f3n y faros de niebla. Motor eficiente y espacio ideal para la familia. Una oportunidad que suele irse r\u00e1pido.",
+            "imagen": "Nissan/versa_1.6_ADVANCE.jpg"
+        }
+    }
+}
