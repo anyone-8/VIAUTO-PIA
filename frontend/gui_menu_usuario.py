@@ -2,7 +2,7 @@ import json
 import customtkinter as ctk
 from pathlib import Path
 from PIL import Image
-from tkinter import messagebox
+from backend.CRUD_convenios import Convenios
 
 
 class Menu_Usuario(ctk.CTkFrame):
@@ -10,12 +10,7 @@ class Menu_Usuario(ctk.CTkFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master, **kwargs)
 
-        self.ruta_json = (
-            Path(__file__).resolve().parents[1]
-            / "datos"
-            / "convenios"
-            / "convenios_libro_mayor.json"
-        )
+        self.convenio = Convenios()
 
         self.ruta_imagenes = (
             Path(__file__).resolve().parents[1]
@@ -31,22 +26,13 @@ class Menu_Usuario(ctk.CTkFrame):
         self.crear_interfaz()
 
     def cargar_autos(self):
-        try:
-            with open(self.ruta_json, "r", encoding="utf-8") as archivo:
-                datos = json.load(archivo)
 
-            for marca, modelos in datos.items():
-                for clave, informacion in modelos.items():
-                    auto = informacion.copy()
-                    auto.setdefault("marca", marca)
-                    auto.setdefault("modelo", clave)
-                    self.autos.append(auto)
-
-        except (OSError, json.JSONDecodeError) as error:
-            messagebox.showerror(
-                "Error",
-                f"No se pudieron cargar los autos:\n{error}"
-            )
+        for marca, modelos in self.convenio.data.items():
+            for clave, informacion in modelos.items():
+                auto = informacion.copy()
+                auto.setdefault("marca", marca)
+                auto.setdefault("modelo", clave)
+                self.autos.append(auto)
 
     def crear_interfaz(self):
         self.grid_columnconfigure(0, weight=1)
