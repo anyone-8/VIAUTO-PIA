@@ -15,7 +15,92 @@
                 "alto": 1.475
             },
             "descripcion": "Seminuevo con \u00fanicamente 12500km. Equipa transmisi\u00f3n autom\u00e1tica, control de crucero, encendido con bot\u00f3n y faros de niebla. Motor eficiente y espacio ideal para la familia. Una oportunidad que suele irse r\u00e1pido.",
-            "imagen": "Nissan/versa_1.6_ADVANCE.jpg"
+            "imagen": "versa_1.6_ADVANCE.jpg"
+        },
+        "Versa 1.6 SENCE": {
+            "marca": "Nissan",
+            "modelo": "Versa 1.6 SENCE",
+            "precio": "14700",
+            "a\u00f1o_de_fabricacion": "2018",
+            "caballos_de_fuerza": "106",
+            "capacidad": "5",
+            "peso": "1441",
+            "consumo_conbinado": "5.8",
+            "dimensiones": {
+                "largo": "4.5",
+                "ancho": "1.74",
+                "alto": "1.47"
+            },
+            "descripcion": "Nissan Versa Sense 1.6 seminuevo, excelente estado y listo para reestrenar con su amplio espacio interior. Ideal para el d\u00eda a d\u00eda o viajes en familia por su gran confort y rendimiento de combustible\n",
+            "imagen": "Versa 1.6 SENCE.jpg"
+        },
+        "Versa 1.6 PLATINUM": {
+            "marca": "Nissan",
+            "modelo": "Versa 1.6 PLATINUM",
+            "precio": "197000",
+            "a\u00f1o_de_fabricacion": "2020",
+            "caballos_de_fuerza": "118",
+            "capacidad": "5",
+            "peso": "1540",
+            "consumo_conbinado": "4.9",
+            "dimensiones": {
+                "largo": "4.5",
+                "ancho": "1.74",
+                "alto": "1.475"
+            },
+            "descripcion": "Nissan Versa Platinum 2020 en excelente estado. Motor 1.6L s\u00faper ahorrador de gasolina y el m\u00e1ximo nivel de seguridad\n",
+            "imagen": "Versa 1.6 PLATINUM.jpg"
+        },
+        "March 1.6": {
+            "marca": "Nissan",
+            "modelo": "March 1.6",
+            "precio": "167000",
+            "a\u00f1o_de_fabricacion": "2020",
+            "caballos_de_fuerza": "106",
+            "capacidad": "5",
+            "peso": "1362",
+            "consumo_conbinado": "6",
+            "dimensiones": {
+                "largo": "3.827",
+                "ancho": "1.666",
+                "alto": "1.528"
+            },
+            "descripcion": "Gran oportunidad: est\u00e1 entre las opciones m\u00e1s accesibles de nuestro inventario y es competitiva frente al mercado. Ofrece un ahorro notable frente a uno nuevo, con la misma practicidad y confiabilidad para la ciudad. Tiene uso acorde a su a\u00f1o, ideal si buscas un usado bien balanceado.\n",
+            "imagen": "March 1.6.jpg"
+        },
+        "March 1.6 ADVANCE": {
+            "marca": "Nissan",
+            "modelo": "March 1.6 ADVANCE",
+            "precio": "200000",
+            "a\u00f1o_de_fabricacion": "2023",
+            "caballos_de_fuerza": "106",
+            "capacidad": "5",
+            "peso": "1394",
+            "consumo_conbinado": "5.6",
+            "dimensiones": {
+                "largo": "3.827",
+                "ancho": "1.666",
+                "alto": "1.528"
+            },
+            "descripcion": "Es m\u00e1s accesible que opciones similares e incluso se ahorra mucho frente a uno nuevo, tiene muy poco uso, mejor cuidado que la mayor\u00eda de su categor\u00eda.\n",
+            "imagen": "March 1.6 ADVANCE.jpg"
+        },
+        "Sentra 1.8": {
+            "marca": "Nissan",
+            "modelo": "Sentra 1.8",
+            "precio": "159000",
+            "a\u00f1o_de_fabricacion": "2026",
+            "caballos_de_fuerza": "129",
+            "capacidad": "5",
+            "peso": "1697",
+            "consumo_conbinado": "5.2",
+            "dimensiones": {
+                "largo": "4.636",
+                "ancho": "1.761",
+                "alto": "1.505"
+            },
+            "descripcion": "El Nissan Sentra equilibra de manera perfecta una presencia sofisticada con una habitabilidad excepcional. Dise\u00f1ado para ofrecer una experiencia de marcha suave, silenciosa y altamente segura.\n",
+            "imagen": "Sentra 1.8.jpg"
         }
     }
 }
