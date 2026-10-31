@@ -1,6 +1,6 @@
 #clase para cerar el menu pricipal
 from backend.CRUD_convenios import Convenios
-from frontend.gui_autos import Menu_gui_autos
+from frontend.gui_autos_v2 import Menu_gui_autos
 import customtkinter as ctk
 
 class principal_administradores(ctk.CTkFrame):
@@ -21,6 +21,7 @@ class principal_administradores(ctk.CTkFrame):
         e_place["boton_autos"] = ctk.CTkButton(self, text="Catalogo de autos", width=80, height=80, command=self.menu_autos)
 
         e_place["boton_autos"].place(relx=0.20, rely=0.20, anchor="nw")
+
 
     def menu_autos(self):
         self.ocultar_opciones()
