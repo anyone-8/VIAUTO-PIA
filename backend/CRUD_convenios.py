@@ -1,5 +1,6 @@
 #clase para añadir marcas y modelos de autos
-
+import shutil
+import os
 import json
 
 class Convenios:
@@ -40,6 +41,26 @@ class Convenios:
             return "No se pudo guardar la marca"
 
     #en base a un diccionario con todos los elementos se realiza el llenado de un nuevo modelo de auto
-    def añadir_modelo(self, formulario):
-        if formulario["marca"] not in self.data:
-            return "no existe la marca"
+    def añadir_modelo(self, formulario, imagen):
+        for modelo in self.data[formulario["marca"]].keys():
+            if modelo.lower().replace("_", "") == formulario["modelo"].lower().replace(" ", "").replace("_", ""):
+                return False
+
+        self.data[formulario["marca"]].update({formulario["modelo"] : formulario})
+
+        if self.guardar_json():
+
+            print(imagen)
+            nombre_base_imagen = os.path.basename(imagen)
+            print(nombre_base_imagen)
+            nombre_puente = os.path.join(f"datos/convenios/{formulario["marca"]}/{nombre_base_imagen}")
+            print(nombre_puente)
+            shutil.copy2(imagen, nombre_puente)
+            os.rename(nombre_puente, f"datos/convenios/{formulario["marca"]}/{formulario["imagen"]}")
+
+        else:
+            return False
+
+        
+
+        
