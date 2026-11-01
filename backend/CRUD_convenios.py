@@ -35,6 +35,10 @@ class Convenios:
         #añadimos nueva marca
         self.data.update({f"{marca}": {}})
         if self.guardar_json():
+            carpeta = os.path.join(f"datos/convenios/{marca}")
+            os.makedirs(carpeta, exist_ok=True)
+
+
             return f"se guardo la marca {marca} con exito"
         else:
             self.data.pop(marca, None)
