@@ -88,19 +88,1038 @@
         "Sentra 1.8": {
             "marca": "Nissan",
             "modelo": "Sentra 1.8",
-            "precio": "159000",
-            "a\u00f1o_de_fabricacion": "2026",
+            "precio": "153999",
+            "a\u00f1o_de_fabricacion": "2018",
             "caballos_de_fuerza": "129",
             "capacidad": "5",
-            "peso": "1697",
-            "consumo_conbinado": "5.2",
+            "peso": "1670",
+            "consumo_conbinado": "5.6",
             "dimensiones": {
                 "largo": "4.636",
                 "ancho": "1.761",
                 "alto": "1.505"
             },
-            "descripcion": "El Nissan Sentra equilibra de manera perfecta una presencia sofisticada con una habitabilidad excepcional. Dise\u00f1ado para ofrecer una experiencia de marcha suave, silenciosa y altamente segura.\n",
+            "descripcion": "Equilibrio ideal para tu d\u00eda a d\u00eda: manejo suave y rendidor, con bot\u00f3n de encendido y espacio para 5. Se ha usado poco para su edad, as\u00ed que te llevas un sed\u00e1n confiable y listo para muchos kil\u00f3metros m\u00e1s.\n\n",
             "imagen": "Sentra 1.8.jpg"
+        },
+        "Sentra 2.0 ADVANCE": {
+            "marca": "Nissan",
+            "modelo": "Sentra 2.0 ADVANCE",
+            "precio": "210000",
+            "a\u00f1o_de_fabricacion": "2020",
+            "caballos_de_fuerza": "145",
+            "capacidad": "5",
+            "peso": "1706",
+            "consumo_conbinado": "5.1",
+            "dimensiones": {
+                "largo": "4.636",
+                "ancho": "1.815",
+                "alto": "1.455"
+            },
+            "descripcion": "Sed\u00e1n confiable y bien equipado para el d\u00eda a d\u00eda. Ofrece 6 bolsas de aire, control crucero, bot\u00f3n de encendido, faros de niebla y volante en piel: el equilibrio ideal entre seguridad y confort. Su historial es muy sano, con uso anual por debajo de lo habitual en su categor\u00eda\n",
+            "imagen": "Sentra 2.0 ADVANCE.jpg"
+        },
+        "  Sentra 1.8 EXCLUSIVE": {
+            "marca": "Nissan",
+            "modelo": "  Sentra 1.8 EXCLUSIVE",
+            "precio": "154000",
+            "a\u00f1o_de_fabricacion": "2017",
+            "caballos_de_fuerza": "129",
+            "capacidad": "5",
+            "peso": "1720",
+            "consumo_conbinado": "5.6",
+            "dimensiones": {
+                "largo": "4.640",
+                "ancho": "1.815",
+                "alto": "1.455"
+            },
+            "descripcion": " Un sed\u00e1n completo y confiable, con asientos de piel, quemacocos, arranque con bot\u00f3n, control de crucero, faros de niebla y navegaci\u00f3n integrada.\n",
+            "imagen": "Sentra 1.8 EXCLUSIVE.jpg"
+        },
+        "Kicks 1.6 ADVANCE": {
+            "marca": "Nissan",
+            "modelo": "Kicks 1.6 ADVANCE",
+            "precio": "202000",
+            "a\u00f1o_de_fabricacion": "2020",
+            "caballos_de_fuerza": "118",
+            "capacidad": "5",
+            "peso": "1523",
+            "consumo_conbinado": "5.3",
+            "dimensiones": {
+                "largo": "4.295",
+                "ancho": "1.760",
+                "alto": "1.590"
+            },
+            "descripcion": "Listo para tu d\u00eda a d\u00eda: manejo muy suave, bot\u00f3n de encendido, faros de niebla, volante forrado en piel y 2 bolsas de aire. Tiene un motor robusto y un kilometraje acorde a su edad. Es una decisi\u00f3n muy inteligente por su gran valor.\n",
+            "imagen": "Kicks 1.6 ADVANCE.jpg"
+        },
+        "Kicks 1.6 ADVANCE GRIS": {
+            "marca": "Nissan",
+            "modelo": "Kicks 1.6 ADVANCE GRIS",
+            "precio": "199999",
+            "a\u00f1o_de_fabricacion": "2018",
+            "caballos_de_fuerza": "118",
+            "capacidad": "5",
+            "peso": "1523",
+            "consumo_conbinado": "5.3",
+            "dimensiones": {
+                "largo": "4.640",
+                "ancho": "1.815",
+                "alto": "1.455"
+            },
+            "descripcion": "Si buscas una SUV confiable y con poco uso, esta es para ti: ha recorrido muy poco cada a\u00f1o. Su financiamiento es especialmente atractivo y el manejo se siente suave y eficiente.\n",
+            "imagen": "Kicks 1.6 ADVANCE GRIS.jpg"
+        },
+        "Kicks 1.6 ADVANCE NEGRO": {
+            "marca": "Nissan",
+            "modelo": "Kicks 1.6 ADVANCE NEGRO",
+            "precio": "199999",
+            "a\u00f1o_de_fabricacion": "2018",
+            "caballos_de_fuerza": "118",
+            "capacidad": "5",
+            "peso": "1523",
+            "consumo_conbinado": "5.3",
+            "dimensiones": {
+                "largo": "4.640",
+                "ancho": "1.815",
+                "alto": "1.455"
+            },
+            "descripcion": "Si buscas una SUV confiable y con poco uso, esta es para ti: ha recorrido muy poco cada a\u00f1o. Su financiamiento es especialmente atractivo y el manejo se siente suave y eficiente.\n",
+            "imagen": "Kicks 1.6 ADVANCE NEGRO.jpg"
+        },
+        "Sentra 2.0 ADVANCE NARANJA": {
+            "marca": "Nissan",
+            "modelo": "Sentra 2.0 ADVANCE NARANJA",
+            "precio": "210000",
+            "a\u00f1o_de_fabricacion": "2020",
+            "caballos_de_fuerza": "145",
+            "capacidad": "5",
+            "peso": "1706",
+            "consumo_conbinado": "5.1",
+            "dimensiones": {
+                "largo": "4.636",
+                "ancho": "1.761",
+                "alto": "1.505"
+            },
+            "descripcion": "Sed\u00e1n confiable y bien equipado para el d\u00eda a d\u00eda. Ofrece 6 bolsas de aire, control crucero, bot\u00f3n de encendido, faros de niebla y volante en piel: el equilibrio ideal entre seguridad y confort. Su historial es muy sano, con uso anual por debajo de lo habitual en su categor\u00eda.\n",
+            "imagen": "Sentra 2.0 ADVANCE NARANJA.jpg"
+        }
+    },
+    "Chevrolet": {
+        "Aveo 1.5 LS D Seda": {
+            "marca": "Chevrolet",
+            "modelo": "Aveo 1.5 LS D Seda",
+            "precio": "217000",
+            "a\u00f1o_de_fabricacion": "2026",
+            "caballos_de_fuerza": "98",
+            "capacidad": "5",
+            "peso": "1550",
+            "consumo_conbinado": "4.9",
+            "dimensiones": {
+                "largo": "4.490",
+                "ancho": "1.695",
+                "alto": "1.490"
+            },
+            "descripcion": "Ideal para quienes buscan espacio, comodidad y la m\u00e1xima seguridad para su familia.\n",
+            "imagen": "Aveo 1.5 LS D Seda.jpg"
+        },
+        "Aveo 1.5 LT D AUTO Sedan": {
+            "marca": "Chevrolet",
+            "modelo": "Aveo 1.5 LT D AUTO Sedan",
+            "precio": "134000",
+            "a\u00f1o_de_fabricacion": "2018",
+            "caballos_de_fuerza": "107",
+            "capacidad": "5",
+            "peso": "1486",
+            "consumo_conbinado": "5.2",
+            "dimensiones": {
+                "largo": "4.300",
+                "ancho": "1.735",
+                "alto": "1.502"
+            },
+            "descripcion": "Seminuevo en excelente estado, un sed\u00e1n sumamente confiable y reconocido por su gran eficiencia de combustible\n",
+            "imagen": "Aveo 1.5 LT D AUTO Sedan.jpg"
+        },
+        "Onix 1.0 LT D AUTO Sedan": {
+            "marca": "Chevrolet",
+            "modelo": "Onix 1.0 LT D AUTO Sedan",
+            "precio": "194999",
+            "a\u00f1o_de_fabricacion": "2022",
+            "caballos_de_fuerza": "114",
+            "capacidad": "5",
+            "peso": "1510",
+            "consumo_conbinado": "5.1",
+            "dimensiones": {
+                "largo": "4.474",
+                "ancho": "1.730",
+                "alto": "2.044"
+            },
+            "descripcion": "Seminuevo en excelente estado, un sed\u00e1n moderno que destaca por su motor turbo de 3 cilindros con un gran balance entre potencia y bajo consumo\n",
+            "imagen": "Onix 1.0 LT D AUTO Sedan.jpg"
+        },
+        "Onix 1.0 LT D AUTO Sedan AZUL": {
+            "marca": "Chevrolet",
+            "modelo": "Onix 1.0 LT D AUTO Sedan AZUL",
+            "precio": "134999",
+            "a\u00f1o_de_fabricacion": "2021",
+            "caballos_de_fuerza": "114",
+            "capacidad": "5",
+            "peso": "1465",
+            "consumo_conbinado": "4.3",
+            "dimensiones": {
+                "largo": "4.474",
+                "ancho": "1.730",
+                "alto": "2.044"
+            },
+            "descripcion": "Compra inteligente por valor y seguridad. Est\u00e1 muy por debajo del valor de mercado para su kilometraje y tambi\u00e9n frente a uno nuevo similar: m\u00e1s auto por tu dinero\n\n",
+            "imagen": "Onix 1.0 LT D AUTO Sedan AZUL.jpg"
+        },
+        "Onix 1.0 PREMIER REDLINE E AUTO Sedan": {
+            "marca": "Chevrolet",
+            "modelo": "Onix 1.0 PREMIER REDLINE E AUTO Sedan",
+            "precio": "198999",
+            "a\u00f1o_de_fabricacion": "2023",
+            "caballos_de_fuerza": "116",
+            "capacidad": "5",
+            "peso": "1506",
+            "consumo_conbinado": "4.5",
+            "dimensiones": {
+                "largo": "4.474",
+                "ancho": "1.730",
+                "alto": "2.044"
+            },
+            "descripcion": "Si buscas un seminuevo moderno y tope de gama, esta versi\u00f3n es de las m\u00e1s completas: manejo \u00e1gil y eficiente, techo solar, asientos de piel, encendido con bot\u00f3n y 6 bolsas de aire en un sed\u00e1n c\u00f3modo y seguro.\n",
+            "imagen": "Onix 1.0 PREMIER REDLINE E AUTO Sedan.jpg"
+        },
+        "1.2 LT B MT Hatchback": {
+            "marca": "Chevrolet",
+            "modelo": "1.2 LT B MT Hatchback",
+            "precio": "116999",
+            "a\u00f1o_de_fabricacion": "2019",
+            "caballos_de_fuerza": "81",
+            "capacidad": "5",
+            "peso": "1355",
+            "consumo_conbinado": "4.8",
+            "dimensiones": {
+                "largo": "3.635",
+                "ancho": "1.597",
+                "alto": "1.522"
+            },
+            "descripcion": "Chevrolet Beat Hatchback 2019 seminuevo garantizado, con certificaci\u00f3n mec\u00e1nica y documentaci\u00f3n en orden. Es un veh\u00edculo urbano ideal, reconocido por su excelente rendimiento de combustible, agilidad y \u00f3ptimo estado.\n",
+            "imagen": "1.2 LT B MT Hatchback.jpg"
+        },
+        "Beat 1.2 LTZ C Sedan": {
+            "marca": "Chevrolet",
+            "modelo": "Beat 1.2 LTZ C Sedan",
+            "precio": "141999",
+            "a\u00f1o_de_fabricacion": "2019",
+            "caballos_de_fuerza": "81",
+            "capacidad": "5",
+            "peso": "1405",
+            "consumo_conbinado": "4.8",
+            "dimensiones": {
+                "largo": "3.635",
+                "ancho": "1.597",
+                "alto": "1.522"
+            },
+            "descripcion": "Este veh\u00edculo urbano destaca por su sobresaliente rendimiento de combustible, dimensiones compactas ideales para la ciudad y un manejo sumamente \u00e1gil.\n",
+            "imagen": "Beat 1.2 LTZ C Sedan.jpg"
+        },
+        "Trax 1.8 C LTZ AT Suv": {
+            "marca": "Chevrolet",
+            "modelo": "Trax 1.8 C LTZ AT Suv",
+            "precio": "129999",
+            "a\u00f1o_de_fabricacion": "2016",
+            "caballos_de_fuerza": "140",
+            "capacidad": "5",
+            "peso": "1400",
+            "consumo_conbinado": "7.3",
+            "dimensiones": {
+                "largo": "4.537",
+                "ancho": "1.823",
+                "alto": "1.560"
+            },
+            "descripcion": "Si buscas seguridad y confort, esta SUV en versi\u00f3n m\u00e1s equipada te encantar\u00e1: techo el\u00e9ctrico, asientos en piel, navegaci\u00f3n, control de crucero, 6 bolsas de aire y faros de niebla. Transmisi\u00f3n autom\u00e1tica con modo manual para manejar sin esfuerzo. Adem\u00e1s, te da una ventaja inmediata frente a otras opciones del mercado.\n",
+            "imagen": "Trax 1.8 C LTZ AT Suv.jpg"
+        },
+        "Trax 1.8 C PREMIER AT Suv": {
+            "marca": "Chevrolet",
+            "modelo": "Trax 1.8 C PREMIER AT Suv",
+            "precio": "167999",
+            "a\u00f1o_de_fabricacion": "2017",
+            "caballos_de_fuerza": "140",
+            "capacidad": "5",
+            "peso": "1402",
+            "consumo_conbinado": "6.40",
+            "dimensiones": {
+                "largo": "4.537",
+                "ancho": "1.823",
+                "alto": "1.560"
+            },
+            "descripcion": "Esta SUV destaca por su perfecto equilibrio entre espacio interior y dimensiones exteriores, ideal tanto para la conducci\u00f3n urbana como para viajes en carretera.\n",
+            "imagen": "Trax 1.8 C PREMIER AT Suv.jpg"
+        },
+        "Trax 1.8 A LS MT Suv": {
+            "marca": "Chevrolet",
+            "modelo": "Trax 1.8 A LS MT Suv",
+            "precio": "126999",
+            "a\u00f1o_de_fabricacion": "2014",
+            "caballos_de_fuerza": "140",
+            "capacidad": "5",
+            "peso": "1405",
+            "consumo_conbinado": "6.7",
+            "dimensiones": {
+                "largo": "4.537",
+                "ancho": "1.823",
+                "alto": "1.560"
+            },
+            "descripcion": "Chevrolet Trax seminueva que combina un dise\u00f1o moderno, confort y versatilidad en un formato compacto. Su configuraci\u00f3n motriz destaca por una entrega de potencia fluida y una suspensi\u00f3n calibrada para absorber con suavidad las irregularidades del camino, garantizando traslados urbanos y viajes por carretera sumamente c\u00f3modos y estables.\n",
+            "imagen": "Trax 1.8 A LS MT Suv.jpg"
+        },
+        "Spark 1.4 LT B MT Hatchback": {
+            "marca": "Chevrolet",
+            "modelo": "Spark 1.4 LT B MT Hatchback",
+            "precio": "104999",
+            "a\u00f1o_de_fabricacion": "2016",
+            "caballos_de_fuerza": "98",
+            "capacidad": "5",
+            "peso": "1365",
+            "consumo_conbinado": "4.9",
+            "dimensiones": {
+                "largo": "3.635",
+                "ancho": "1.595",
+                "alto": "1.483"
+            },
+            "descripcion": "Este hatchback urbano destaca por su sobresaliente econom\u00eda de combustible, dimensiones compactas ideales para estacionarse con facilidad y una gran agilidad en el tr\u00e1fico diario. Cuenta con un habit\u00e1culo c\u00f3modo y bien aprovechado, equipamiento el\u00e9ctrico totalmente funcional y sistemas de seguridad integrales que aseguran traslados diarios eficientes, pr\u00e1cticos y muy confiables.\n",
+            "imagen": "Spark 1.4 LT B MT Hatchback.jpg"
+        }
+    },
+    "Volkswagen": {
+        "Jetta 2.5 TRENDLINE TIP. Sedan": {
+            "marca": "Volkswagen",
+            "modelo": "Jetta 2.5 TRENDLINE TIP. Sedan",
+            "precio": "157999",
+            "a\u00f1o_de_fabricacion": "2017",
+            "caballos_de_fuerza": "168",
+            "capacidad": "5",
+            "peso": "1910",
+            "consumo_conbinado": "7.0",
+            "dimensiones": {
+                "largo": "4.659",
+                "ancho": "1.778",
+                "alto": "2.551"
+            },
+            "descripcion": "Este sed\u00e1n mediano destaca por su s\u00f3lida calidad de marcha, una cabina sumamente espaciosa de gran confort para todos los pasajeros y una de las cajuelas m\u00e1s amplias en su categor\u00eda.\n",
+            "imagen": "Jetta 2.5 TRENDLINE TIP. Sedan.jpg"
+        },
+        "Jetta 2.5 TRENDLINE TIP. Sedan AZUL": {
+            "marca": "Volkswagen",
+            "modelo": "Jetta 2.5 TRENDLINE TIP. Sedan AZUL",
+            "precio": "157999",
+            "a\u00f1o_de_fabricacion": "2016",
+            "caballos_de_fuerza": "168",
+            "capacidad": "5",
+            "peso": "1910",
+            "consumo_conbinado": "7.0",
+            "dimensiones": {
+                "largo": "4.659",
+                "ancho": "1.778",
+                "alto": "2.551"
+            },
+            "descripcion": "Disfruta un manejo suave y con buena respuesta en un sed\u00e1n amplio, c\u00f3modo y confiable para el d\u00eda a d\u00eda. Su historial de uso est\u00e1 por debajo del promedio, as\u00ed que llega bien cuidado. Adem\u00e1s, es una opci\u00f3n muy accesible por el valor que ofrece.\n",
+            "imagen": "Jetta 2.5 TRENDLINE TIP. Sedan AZUL.jpg"
+        },
+        "Vento 1.6 COMFORTLINE STD": {
+            "marca": "Volkswagen",
+            "modelo": "Vento 1.6 COMFORTLINE STD",
+            "precio": "113999",
+            "a\u00f1o_de_fabricacion": "2017",
+            "caballos_de_fuerza": "104",
+            "capacidad": "5",
+            "peso": "1128",
+            "consumo_conbinado": "6.0",
+            "dimensiones": {
+                "largo": "4.384",
+                "ancho": "1.699",
+                "alto": "1.467"
+            },
+            "descripcion": "Si buscas un sed\u00e1n confiable y que gaste poco, esta es gran opci\u00f3n. Viene con transmisi\u00f3n manual para mayor control, control de crucero y bolsas de aire frontales; pr\u00e1ctico y seguro para el d\u00eda a d\u00eda, con espacio para cinco.\n",
+            "imagen": "Vento 1.6 COMFORTLINE STD.jpg"
+        },
+        "Vento 1.6 COMFORTLINE Sedan": {
+            "marca": "Volkswagen",
+            "modelo": "Vento 1.6 COMFORTLINE Sedan",
+            "precio": "158999",
+            "a\u00f1o_de_fabricacion": "2019",
+            "caballos_de_fuerza": "104",
+            "capacidad": "5",
+            "peso": "1128",
+            "consumo_conbinado": "6.0",
+            "dimensiones": {
+                "largo": "4.384",
+                "ancho": "1.699",
+                "alto": "1.467"
+            },
+            "descripcion": "Este sed\u00e1n destaca por su extraordinaria econom\u00eda de combustible, una marcha suave y una gran durabilidad que lo convierten en la opci\u00f3n ideal para el uso diario o trayectos en carretera.\n",
+            "imagen": "Vento 1.6 COMFORTLINE Sedan.jpg"
+        },
+        "Beetle 2.5 SPORTLINE TIPTRONIC": {
+            "marca": "Volkswagen",
+            "modelo": "Beetle 2.5 SPORTLINE TIPTRONIC",
+            "precio": "248999",
+            "a\u00f1o_de_fabricacion": "2017",
+            "caballos_de_fuerza": "168",
+            "capacidad": "4",
+            "peso": "1760",
+            "consumo_conbinado": "7.4",
+            "dimensiones": {
+                "largo": "4.278",
+                "ancho": "1.808",
+                "alto": "1.400"
+            },
+            "descripcion": "Este modelo destaca por su ic\u00f3nica silueta reinterpretada con un dise\u00f1o deportivo, robusto y de perfil m\u00e1s bajo. Su cabina ofrece una atm\u00f3sfera moderna con materiales de excelente manufactura, un tablero bitono distintivo y un equipamiento enfocado en el confort.\n",
+            "imagen": "Beetle 2.5 SPORTLINE TIPTRONIC.jpg"
+        },
+        "Polo 1.6 COMFORTLINE PLUS AUTO": {
+            "marca": "Volkswagen",
+            "modelo": "Polo 1.6 COMFORTLINE PLUS AUTO",
+            "precio": "192000",
+            "a\u00f1o_de_fabricacion": "2020",
+            "caballos_de_fuerza": "105",
+            "capacidad": "5",
+            "peso": "1147",
+            "consumo_conbinado": "5.8",
+            "dimensiones": {
+                "largo": "4.079",
+                "ancho": "1.751",
+                "alto": "1.471"
+            },
+            "descripcion": "Este hatchback destaca por su propuesta de ingenier\u00eda alemana reflejada en un manejo \u00e1gil, firme y seguro ideal para el entorno urbano. Cuenta con una cabina moderna con acabados de alta calidad, \u00f3ptimo aprovechamiento del espacio interior y un sistema de infoentretenimiento intuitivo.\n",
+            "imagen": "Polo 1.6 COMFORTLINE PLUS AUTO.jpg"
+        },
+        "Gol 1.6 5 PTAS. TRENDLINE Hatchback": {
+            "marca": "Volkswagen",
+            "modelo": "Gol 1.6 5 PTAS. TRENDLINE Hatchback",
+            "precio": "153999",
+            "a\u00f1o_de_fabricacion": "2020",
+            "caballos_de_fuerza": "101",
+            "capacidad": "5",
+            "peso": "1450",
+            "consumo_conbinado": "5.6",
+            "dimensiones": {
+                "largo": "3.897",
+                "ancho": "1.656",
+                "alto": "1.464"
+            },
+            "descripcion": "Este veh\u00edculo es ampliamente reconocido por su legendaria durabilidad, robustez mec\u00e1nica y un costo de mantenimiento sumamente bajo. Ofrece una conducci\u00f3n \u00e1gil y un excelente rendimiento de combustible que lo convierten en la opci\u00f3n perfecta para el transporte diario en la ciudad.\n",
+            "imagen": "Gol 1.6 5 PTAS. TRENDLINE Hatchback.jpg"
+        },
+        "Saveiro 1.6 ROBUST CABINA SENCILLA": {
+            "marca": "Volkswagen",
+            "modelo": "Saveiro 1.6 ROBUST CABINA SENCILLA",
+            "precio": "227999",
+            "a\u00f1o_de_fabricacion": "2023",
+            "caballos_de_fuerza": "101",
+            "capacidad": "2",
+            "peso": "1735",
+            "consumo_conbinado": "5.9",
+            "dimensiones": {
+                "largo": "4.493",
+                "ancho": "1.708",
+                "alto": "1.497"
+            },
+            "descripcion": "Esta pickup compacta destaca por su extraordinaria versatilidad, siendo el veh\u00edculo ideal tanto para el trabajo diario como para traslados personales y actividades recreativas.\n",
+            "imagen": "Saveiro 1.6 ROBUST CABINA SENCILLA.jpg"
+        },
+        "Passat 2.5 SPORTLINE Sedan": {
+            "marca": "Volkswagen",
+            "modelo": "Passat 2.5 SPORTLINE Sedan",
+            "precio": "166999",
+            "a\u00f1o_de_fabricacion": "2017",
+            "caballos_de_fuerza": "168",
+            "capacidad": "5",
+            "peso": "2030",
+            "consumo_conbinado": "7.0",
+            "dimensiones": {
+                "largo": "4.767",
+                "ancho": "1.832",
+                "alto": "1.476"
+            },
+            "descripcion": "Entre las opciones m\u00e1s accesibles del mercado y hoy a\u00fan m\u00e1s atractivo. Es el \u00fanico de su tipo en nuestro inventario en Monterrey, as\u00ed que es dif\u00edcil de encontrar. Ideal para manejo c\u00f3modo y seguro, con 6 bolsas de aire, control de crucero y asientos de piel. Adem\u00e1s, tiene menos uso de lo t\u00edpico.\n",
+            "imagen": "Passat 2.5 SPORTLINE Sedan.jpg"
+        },
+        "Passat 2.5 HIGHLINE Sedan": {
+            "marca": "Volkswagen",
+            "modelo": "Passat 2.5 HIGHLINE Sedan",
+            "precio": "178999",
+            "a\u00f1o_de_fabricacion": "2016",
+            "caballos_de_fuerza": "168",
+            "capacidad": "5",
+            "peso": "2030",
+            "consumo_conbinado": "7.0",
+            "dimensiones": {
+                "largo": "4.767",
+                "ancho": "1.832",
+                "alto": "1.476"
+            },
+            "descripcion": "Gran equilibrio entre valor y equipamiento. Est\u00e1 por debajo del promedio del mercado, as\u00ed obtienes m\u00e1s por tu dinero. Ha tenido poco uso para su segmento, con muchos menos kil\u00f3metros por a\u00f1o, ideal para viajes largos si buscas un sed\u00e1n amplio y c\u00f3modo.\n",
+            "imagen": "Passat 2.5 HIGHLINE Sedan.jpg"
+        }
+    },
+    "Ford": {
+        "Fiesta 1.6 SE MT Sedan": {
+            "marca": "Ford",
+            "modelo": "Fiesta 1.6 SE MT Sedan",
+            "precio": "117999",
+            "a\u00f1o_de_fabricacion": "2016",
+            "caballos_de_fuerza": "120",
+            "capacidad": "5",
+            "peso": "1474",
+            "consumo_conbinado": "5.3",
+            "dimensiones": {
+                "largo": "4.409",
+                "ancho": "1.722",
+                "alto": "1.473"
+            },
+            "descripcion": "Este veh\u00edculo destaca por su s\u00f3lido manejo, una direcci\u00f3n precisa y un nivel de insonorizaci\u00f3n en cabina superior a la media de su segmento. Ofrece un habit\u00e1culo moderno con materiales de buena calidad t\u00e1ctil, un dise\u00f1o interior ergon\u00f3mico y un equipamiento enfocado en el confort diario.\n",
+            "imagen": "Fiesta 1.6 SE MT Sedan.jpg"
+        },
+        "Fiesta 1.6 SE Sedan": {
+            "marca": "Ford",
+            "modelo": "Fiesta 1.6 SE Sedan",
+            "precio": "145999",
+            "a\u00f1o_de_fabricacion": "2019",
+            "caballos_de_fuerza": "120",
+            "capacidad": "5",
+            "peso": "1474",
+            "consumo_conbinado": "5.6",
+            "dimensiones": {
+                "largo": "4.409",
+                "ancho": "1.722",
+                "alto": "1.473"
+            },
+            "descripcion": "Si buscas manejo \u00e1gil y costos contenidos, esta opci\u00f3n te encantar\u00e1: 7 bolsas de aire, quemacocos y control de crucero, adem\u00e1s de volante en piel y espacio c\u00f3modo para 5. Su uso est\u00e1 acorde a su edad. Lo mejor: obtienes m\u00e1s equipamiento por tu dinero y hoy es a\u00fan m\u00e1s competitivo.\n",
+            "imagen": "Fiesta 1.6 SE Sedan.jpg"
+        },
+        "Fiesta 1.6 SE MT Hatchback": {
+            "marca": "Ford",
+            "modelo": "Fiesta 1.6 SE MT Hatchback",
+            "precio": "106999",
+            "a\u00f1o_de_fabricacion": "2016",
+            "caballos_de_fuerza": "120",
+            "capacidad": "5",
+            "peso": "1642",
+            "consumo_conbinado": "5.3",
+            "dimensiones": {
+                "largo": "3.892",
+                "ancho": "1.722",
+                "alto": "1.495"
+            },
+            "descripcion": "Este modelo destaca por su atractiva l\u00ednea juvenil de estilo europeo, ofreciendo dimensiones ideales para estacionarse con facilidad y una gran agilidad en el tr\u00e1nsito diario. Su habit\u00e1culo aprovecha el espacio de forma inteligente con asientos c\u00f3modos, una excelente visibilidad y un dise\u00f1o moderno..\n",
+            "imagen": "Fiesta 1.6 SE MT Hatchback.jpg"
+        },
+        "Figo 1.5 ENERGY Sedan": {
+            "marca": "Ford",
+            "modelo": "Figo 1.5 ENERGY Sedan",
+            "precio": "122999",
+            "a\u00f1o_de_fabricacion": "2016",
+            "caballos_de_fuerza": "121",
+            "capacidad": "5",
+            "peso": "1460",
+            "consumo_conbinado": "4.7",
+            "dimensiones": {
+                "largo": "4.249",
+                "ancho": "1.699",
+                "alto": "1.525"
+            },
+            "descripcion": "Este auto urbano destaca por sus dimensiones compactas ideales para la ciudad, un manejo sumamente \u00e1gil y uno de los mejores rendimientos de combustible de su categor\u00eda.\n",
+            "imagen": "Figo 1.5 ENERGY Sedan.jpg"
+        },
+        "Figo 1.5 TITANIUM AUTO Sedan": {
+            "marca": "Ford",
+            "modelo": "Figo 1.5 TITANIUM AUTO Sedan",
+            "precio": "157999",
+            "a\u00f1o_de_fabricacion": "2020",
+            "caballos_de_fuerza": "121",
+            "capacidad": "5",
+            "peso": "1460",
+            "consumo_conbinado": "5.0",
+            "dimensiones": {
+                "largo": "4.249",
+                "ancho": "1.699",
+                "alto": "1.525"
+            },
+            "descripcion": "Es un veh\u00edculo que destaca por su robustez, excelente habitabilidad y una de las cajuelas m\u00e1s amplias y funcionales de su segmento\n",
+            "imagen": "Figo 1.5 TITANIUM AUTO Sedan.jpg"
+        },
+        "Fusion 2.0 GTDI TITANIUM PLUS AT Sedan": {
+            "marca": "Ford",
+            "modelo": "Fusion 2.0 GTDI TITANIUM PLUS AT Sedan",
+            "precio": "193999",
+            "a\u00f1o_de_fabricacion": "2017",
+            "caballos_de_fuerza": "240",
+            "capacidad": "5",
+            "peso": "1850",
+            "consumo_conbinado": "7.1",
+            "dimensiones": {
+                "largo": "3.815",
+                "ancho": "1.852",
+                "alto": "1.478"
+            },
+            "descripcion": "Este sed\u00e1n mediano destaca por su manejo premium, extraordinaria insonorizaci\u00f3n en cabina y una robusta estructura de seguridad. Ofrece un habit\u00e1culo sumamente espacioso, acabados de alta calidad y un equipamiento tecnol\u00f3gico de primer nivel.\n",
+            "imagen": "Fusion 2.0 GTDI TITANIUM PLUS AT Sedan.jpg"
+        },
+        "Fusion 2.1 GTDI TITANIUM PLUS AT Sedan ": {
+            "marca": "Ford",
+            "modelo": "Fusion 2.1 GTDI TITANIUM PLUS AT Sedan ",
+            "precio": "193999",
+            "a\u00f1o_de_fabricacion": "2017",
+            "caballos_de_fuerza": "240",
+            "capacidad": "5",
+            "peso": "1850",
+            "consumo_conbinado": "7.1",
+            "dimensiones": {
+                "largo": "3.815",
+                "ancho": "1.852",
+                "alto": "1.478"
+            },
+            "descripcion": "Este sed\u00e1n mediano destaca por su manejo premium, extraordinaria insonorizaci\u00f3n en cabina y una robusta estructura de seguridad. Ofrece un habit\u00e1culo sumamente espacioso, acabados de alta calidad y un equipamiento tecnol\u00f3gico de primer nivel.\n",
+            "imagen": "Fusion 2.1 GTDI TITANIUM PLUS AT Sedan .jpg"
+        }
+    },
+    "Hyundai": {
+        "Grand I10 1.2 GL Hatchback": {
+            "marca": "Hyundai",
+            "modelo": "Grand I10 1.2 GL Hatchback",
+            "precio": "185999",
+            "a\u00f1o_de_fabricacion": "2024",
+            "caballos_de_fuerza": "83",
+            "capacidad": "5",
+            "peso": "1383",
+            "consumo_conbinado": "5.1",
+            "dimensiones": {
+                "largo": "4.249",
+                "ancho": "1.680",
+                "alto": "1.520"
+            },
+            "descripcion": "Este veh\u00edculo urbano destaca por ser uno de los m\u00e1s eficientes y econ\u00f3micos en consumo de combustible dentro de su categor\u00eda. Ofrece dimensiones compactas ideales para maniobrar y estacionarse con facilidad en la ciudad.\n",
+            "imagen": "Grand I10 1.2 GL Hatchback.jpg"
+        },
+        "Grand I10 1.2 GL MID AUTO Hatchback": {
+            "marca": "Hyundai",
+            "modelo": "Grand I10 1.2 GL MID AUTO Hatchback",
+            "precio": "175999",
+            "a\u00f1o_de_fabricacion": "2021",
+            "caballos_de_fuerza": "83",
+            "capacidad": "5",
+            "peso": "1400",
+            "consumo_conbinado": "5.6",
+            "dimensiones": {
+                "largo": "4.249",
+                "ancho": "1.680",
+                "alto": "1.520"
+            },
+            "descripcion": "Es un auto highly reconocido por su excelente calidad de ensamble, marcha silenciosa y un costo de mantenimiento sumamente bajo.\n",
+            "imagen": "Grand I10 1.2 GL MID AUTO Hatchback.jpg"
+        },
+        "Accent 1.6 GL MID Sedan": {
+            "marca": "Hyundai",
+            "modelo": "Accent 1.6 GL MID Sedan",
+            "precio": "184999",
+            "a\u00f1o_de_fabricacion": "2022",
+            "caballos_de_fuerza": "121",
+            "capacidad": "5",
+            "peso": "1530",
+            "consumo_conbinado": "5.6",
+            "dimensiones": {
+                "largo": "4.385",
+                "ancho": "1.729",
+                "alto": "1.460"
+            },
+            "descripcion": "Esta opci\u00f3n destaca por su plan de financiamiento muy agresivo, el m\u00e1s conveniente entre opciones similares, para que estrenes con tranquilidad. Sed\u00e1n confiable y rendidor, con espacio para 5 y cajuela amplia, ideal para ciudad y carretera.\n",
+            "imagen": "Accent 1.6 GL MID Sedan.jpg"
+        },
+        "Creta 1.6 GLS AUTO Suv": {
+            "marca": "Hyundai",
+            "modelo": "Creta 1.6 GLS AUTO Suv",
+            "precio": "200999",
+            "a\u00f1o_de_fabricacion": "2019",
+            "caballos_de_fuerza": "121",
+            "capacidad": "5",
+            "peso": "1760",
+            "consumo_conbinado": "6.2",
+            "dimensiones": {
+                "largo": "4.270",
+                "ancho": "1.780",
+                "alto": "1.630"
+            },
+            "descripcion": "Esta SUV compacta destaca por ofrecer uno de los habit\u00e1culos m\u00e1s amplios, c\u00f3modos y funcionales de su categor\u00eda, ideal tanto para la rutina urbana como para viajes familiares.\n",
+            "imagen": "Creta 1.6 GLS AUTO Suv.jpg"
+        },
+        "Hyundai Creta 1.6 GLS PREMIUM AUTO Suv AZUL": {
+            "marca": "Hyundai",
+            "modelo": "Hyundai Creta 1.6 GLS PREMIUM AUTO Suv AZUL",
+            "precio": "200999",
+            "a\u00f1o_de_fabricacion": "2019",
+            "caballos_de_fuerza": "121",
+            "capacidad": "5",
+            "peso": "1760",
+            "consumo_conbinado": "6.2",
+            "dimensiones": {
+                "largo": "4.270",
+                "ancho": "1.780",
+                "alto": "1.630"
+            },
+            "descripcion": "Hyundai Creta 2019 seminueva que destaca por su excelente durabilidad, gran habitabilidad y un manejo sumamente suave.\n",
+            "imagen": "Hyundai Creta 1.6 GLS PREMIUM AUTO Suv AZUL.jpg"
+        }
+    },
+    "KIA": {
+        "Rio 1.6 L AUTO Sedan": {
+            "marca": "KIA",
+            "modelo": "Rio 1.6 L AUTO Sedan",
+            "precio": "208999",
+            "a\u00f1o_de_fabricacion": "2022",
+            "caballos_de_fuerza": "121",
+            "capacidad": "5",
+            "peso": "1640",
+            "consumo_conbinado": "5.6",
+            "dimensiones": {
+                "largo": "4.385",
+                "ancho": "1.725",
+                "alto": "1.460"
+            },
+            "descripcion": "Este sed\u00e1n destaca por su dise\u00f1o moderno, su gran calidad de ensamble y un manejo sumamente \u00e1gil ideal para el d\u00eda a d\u00eda. Ofrece una cabina confortable, una cajuela espaciosa y una s\u00f3lida estructura de seguridad con frenos ABS y control de estabilidad.\n",
+            "imagen": "Rio 1.6 L AUTO Sedan.jpg"
+        },
+        "Rio 1.6 LX Sedan": {
+            "marca": "KIA",
+            "modelo": "Rio 1.6 LX Sedan",
+            "precio": "182999",
+            "a\u00f1o_de_fabricacion": "2021",
+            "caballos_de_fuerza": "121",
+            "capacidad": "5",
+            "peso": "1640",
+            "consumo_conbinado": "6.2",
+            "dimensiones": {
+                "largo": "4.385",
+                "ancho": "1.725",
+                "alto": "1.460"
+            },
+            "descripcion": "Si buscas un sed\u00e1n confiable y ahorrador, esta es una decisi\u00f3n inteligente. Se encuentra entre las opciones m\u00e1s accesibles del mercado y dentro de nuestra oferta para esta versi\u00f3n. Mucho m\u00e1s accesible que uno nuevo equivalente\n",
+            "imagen": "Rio 1.6 LX Sedan.jpg"
+        },
+        "Rio 1.6 LX Sedan AZUL": {
+            "marca": "KIA",
+            "modelo": "Rio 1.6 LX Sedan AZUL",
+            "precio": "156999",
+            "a\u00f1o_de_fabricacion": "2019",
+            "caballos_de_fuerza": "121",
+            "capacidad": "5",
+            "peso": "1760",
+            "consumo_conbinado": "5.3",
+            "dimensiones": {
+                "largo": "4.270",
+                "ancho": "1.780",
+                "alto": "1.630"
+            },
+            "descripcion": "Hyundai Creta 2019 seminueva que destaca por su excelente durabilidad, gran habitabilidad y un manejo sumamente suave.\n",
+            "imagen": "Rio 1.6 LX Sedan AZUL.jpg"
+        },
+        "Rio 1.6 LX AUTO Sedan": {
+            "marca": "KIA",
+            "modelo": "Rio 1.6 LX AUTO Sedan",
+            "precio": "162999",
+            "a\u00f1o_de_fabricacion": "2018",
+            "caballos_de_fuerza": "121",
+            "capacidad": "5",
+            "peso": "1745",
+            "consumo_conbinado": "5.3",
+            "dimensiones": {
+                "largo": "4.385",
+                "ancho": "1.725",
+                "alto": "1.460"
+            },
+            "descripcion": "Hyundai Creta 2019 seminueva que destaca por su excelente durabilidad, gran habitabilidad y un manejo sumamente suave.\n",
+            "imagen": "Rio 1.6 LX AUTO Sedan.jpg"
+        },
+        "Rio 1.6 LX Sedan ROJO": {
+            "marca": "KIA",
+            "modelo": "Rio 1.6 LX Sedan ROJO",
+            "precio": "156999",
+            "a\u00f1o_de_fabricacion": "2019",
+            "caballos_de_fuerza": "121",
+            "capacidad": "5",
+            "peso": "1640",
+            "consumo_conbinado": "5.3",
+            "dimensiones": {
+                "largo": "4.385",
+                "ancho": "1.725",
+                "alto": "1.460"
+            },
+            "descripcion": "Perfecto para tu d\u00eda a d\u00eda: c\u00f3modo, con manejo \u00e1gil y ahorro de gasolina. Viaja tranquilo con 6 bolsas de aire para cinco pasajeros. Es una de las opciones m\u00e1s accesibles del mercado. Tiene un kilometraje acorde a su a\u00f1o.\n",
+            "imagen": "Rio 1.6 LX Sedan ROJO.jpg"
+        },
+        "Forte 2.0 L MT Sedan": {
+            "marca": "KIA",
+            "modelo": "Forte 2.0 L MT Sedan",
+            "precio": "127999",
+            "a\u00f1o_de_fabricacion": "2017",
+            "caballos_de_fuerza": "150",
+            "capacidad": "5",
+            "peso": "1335",
+            "consumo_conbinado": "6.5",
+            "dimensiones": {
+                "largo": "4.640",
+                "ancho": "1.800",
+                "alto": "1.440"
+            },
+            "descripcion": "Esta es una compra inteligente: m\u00e1s accesible que el promedio y con ahorro real desde el primer d\u00eda. Ha tenido uso moderado, con kilometraje por debajo del est\u00e1ndar anual. Ofrece manejo eficiente y con buen control.\n",
+            "imagen": "Forte 2.0 L MT Sedan.jpg"
+        }
+    },
+    "Suzuki": {
+        "Swift 1.2 GLS AUTO Hatchback": {
+            "marca": "Suzuki",
+            "modelo": "Swift 1.2 GLS AUTO Hatchback",
+            "precio": "170999",
+            "a\u00f1o_de_fabricacion": "2018",
+            "caballos_de_fuerza": "82",
+            "capacidad": "5",
+            "peso": "1365",
+            "consumo_conbinado": "4.4",
+            "dimensiones": {
+                "largo": "3.840",
+                "ancho": "1.735",
+                "alto": "1.495"
+            },
+            "descripcion": "Compra inteligente si buscas un hatchback confiable, rendidor y f\u00e1cil de manejar. Suele gastar muy poca gasolina y su mantenimiento es econ\u00f3mico gracias a su motor peque\u00f1o y transmisi\u00f3n autom\u00e1tica.\n",
+            "imagen": "Swift 1.2 GLS AUTO Hatchback.jpg"
+        },
+        "Swift 1.4 BOOSTERJET SPORT AUTO": {
+            "marca": "Suzuki",
+            "modelo": "Swift 1.4 BOOSTERJET SPORT AUTO",
+            "precio": "208999",
+            "a\u00f1o_de_fabricacion": "2019",
+            "caballos_de_fuerza": "138",
+            "capacidad": "5",
+            "peso": "1445",
+            "consumo_conbinado": "5.3",
+            "dimensiones": {
+                "largo": "3.840",
+                "ancho": "1.735",
+                "alto": "1.495"
+            },
+            "descripcion": "Si buscas manejo divertido con gran valor por tu dinero, este compacto deportivo te va a encantar. Motor turbo y autom\u00e1tico con modo manual para una conducci\u00f3n \u00e1gil. Viene bien equipado: 6 bolsas de aire, control de crucero, bot\u00f3n de encendido, GPS y faros de niebla.\n",
+            "imagen": "Swift 1.4 BOOSTERJET SPORT AUTO.jpg"
+        },
+        "Swift 1.4 BOOSTERJET SPORT GLX Hatchback": {
+            "marca": "Suzuki",
+            "modelo": "Swift 1.4 BOOSTERJET SPORT GLX Hatchback",
+            "precio": "237999",
+            "a\u00f1o_de_fabricacion": "2023",
+            "caballos_de_fuerza": "138",
+            "capacidad": "5",
+            "peso": "1445",
+            "consumo_conbinado": "5.8",
+            "dimensiones": {
+                "largo": "3.840",
+                "ancho": "1.735",
+                "alto": "1.495"
+            },
+            "descripcion": "Vive el manejo m\u00e1s divertido con la tranquilidad de una seguridad completa. Esta versi\u00f3n manual trae gran equipo: 6 bolsas de aire, control de crucero, navegaci\u00f3n, bot\u00f3n de encendido y faros de niebla. Su oferta financiada est\u00e1 muy por debajo del mercado y de uno nuevo equivalente, as\u00ed que obtienes mucho desempe\u00f1o por menos.\n",
+            "imagen": "Swift 1.4 BOOSTERJET SPORT GLX Hatchback.jpg"
+        }
+    },
+    "Toyota": {
+        "Yaris 1.5 S CVT Hatchback": {
+            "marca": "Toyota",
+            "modelo": "Yaris 1.5 S CVT Hatchback",
+            "precio": "199999",
+            "a\u00f1o_de_fabricacion": "2021",
+            "caballos_de_fuerza": "106",
+            "capacidad": "5",
+            "peso": "1550",
+            "consumo_conbinado": "5.3",
+            "dimensiones": {
+                "largo": "4.145",
+                "ancho": "1.730",
+                "alto": "1.475"
+            },
+            "descripcion": "Seminuevo en impecables condiciones mec\u00e1nicas, est\u00e9ticas y con documentaci\u00f3n en regla. Este veh\u00edculo es un referente absoluto en el mercado gracias a su legendaria fiabilidad, extraordinaria durabilidad y un costo de mantenimiento sumamente bajo.\n",
+            "imagen": "Yaris 1.5 S CVT Hatchback.jpg"
+        },
+        "Corolla 1.8 LE CVT Sedan": {
+            "marca": "Toyota",
+            "modelo": "Corolla 1.8 LE CVT Sedan",
+            "precio": "167999",
+            "a\u00f1o_de_fabricacion": "2017",
+            "caballos_de_fuerza": "140",
+            "capacidad": "5",
+            "peso": "1690",
+            "consumo_conbinado": "5.3",
+            "dimensiones": {
+                "largo": "4.630",
+                "ancho": "1.780",
+                "alto": "1.455"
+            },
+            "descripcion": "Toyota Corolla seminuevo en impecables condiciones mec\u00e1nicas, est\u00e9ticas y con documentaci\u00f3n en regla.\n",
+            "imagen": "Corolla 1.8 LE CVT Sedan.jpg"
+        },
+        "Corolla 1.8 LE CVT Sedan 2021": {
+            "marca": "Toyota",
+            "modelo": "Corolla 1.8 LE CVT Sedan 2021",
+            "precio": "267999",
+            "a\u00f1o_de_fabricacion": "2021",
+            "caballos_de_fuerza": "140",
+            "capacidad": "5",
+            "peso": "1785",
+            "consumo_conbinado": "5.4",
+            "dimensiones": {
+                "largo": "4.630",
+                "ancho": "1.780",
+                "alto": "1.455"
+            },
+            "descripcion": "Confiable, seguro y muy bien equipado. Es m\u00e1s accesible que la mayor\u00eda del mercado y te ayuda a ahorrar frente a uno nuevo comparable; si eliges financiarlo, puede resultar a\u00fan m\u00e1s conveniente. Tiene kilometraje acorde a su a\u00f1o y detalles que elevan tu d\u00eda a d\u00eda.\n",
+            "imagen": "Corolla 1.8 LE CVT Sedan 2021.jpg"
+        },
+        "Corolla 1.8 LE HYBRID AUTO Sedan": {
+            "marca": "Toyota",
+            "modelo": "Corolla 1.8 LE HYBRID AUTO Sedan",
+            "precio": "308999",
+            "a\u00f1o_de_fabricacion": "2022",
+            "caballos_de_fuerza": "121",
+            "capacidad": "5",
+            "peso": "1775",
+            "consumo_conbinado": "3.4",
+            "dimensiones": {
+                "largo": "4.630",
+                "ancho": "1.780",
+                "alto": "1.455"
+            },
+            "descripcion": "Mu\u00e9vete diario gastando menos con su sistema h\u00edbrido, sin perder comodidad. Ocho bolsas de aire para tu tranquilidad, control de crucero, encendido con bot\u00f3n y volante forrado en piel. Su kilometraje es muy sano para su a\u00f1o. Hoy es una opci\u00f3n especialmente competitiva, una combinaci\u00f3n dif\u00edcil de igualar.\n",
+            "imagen": "Corolla 1.8 LE HYBRID AUTO Sedan.jpg"
+        },
+        "Mazda 3 2.0 HATCHBACK": {
+            "marca": "Toyota",
+            "modelo": "Mazda 3 2.0 HATCHBACK",
+            "precio": "162999",
+            "a\u00f1o_de_fabricacion": "2016",
+            "caballos_de_fuerza": "155",
+            "capacidad": "5",
+            "peso": "1815",
+            "consumo_conbinado": "5.6",
+            "dimensiones": {
+                "largo": "4.662",
+                "ancho": "1.795",
+                "alto": "1.445"
+            },
+            "descripcion": "Este veh\u00edculo destaca por su premiado dise\u00f1o Kodo de l\u00edneas fluidas, acabados interiores de categor\u00eda premium con materiales suaves al tacto y una de las cabinas m\u00e1s silenciosas y sofisticadas de su segmento.\n",
+            "imagen": "Mazda 3 2.0 HATCHBACK.jpg"
+        },
+        "Mazda 3 2.5 TURBO SIGNATURE": {
+            "marca": "Toyota",
+            "modelo": "Mazda 3 2.5 TURBO SIGNATURE",
+            "precio": "272999",
+            "a\u00f1o_de_fabricacion": "2021",
+            "caballos_de_fuerza": "227",
+            "capacidad": "5",
+            "peso": "1950",
+            "consumo_conbinado": "6.7",
+            "dimensiones": {
+                "largo": "4.662",
+                "ancho": "1.795",
+                "alto": "1.445"
+            },
+            "descripcion": "\u00bfBuscas desempe\u00f1o y lujo? Este hatchback con tracci\u00f3n en las cuatro ruedas lo tiene todo: motor turbo \u00e1gil, transmisi\u00f3n autom\u00e1tica con modo manual, siete bolsas de aire, asientos y volante en piel, control de crucero, encendido con bot\u00f3n y quemacocos.\n",
+            "imagen": "Mazda 3 2.5 TURBO SIGNATURE.jpg"
+        }
+    },
+    "Mitsubishi": {
+        "Mirage 1.2 GLX CVT Sedan": {
+            "marca": "Mitsubishi",
+            "modelo": "Mirage 1.2 GLX CVT Sedan",
+            "precio": "231999",
+            "a\u00f1o_de_fabricacion": "2026",
+            "caballos_de_fuerza": "76",
+            "capacidad": "5",
+            "peso": "1320",
+            "consumo_conbinado": "4.4",
+            "dimensiones": {
+                "largo": "4.305",
+                "ancho": "1.670",
+                "alto": "1.515"
+            },
+            "descripcion": "Este sed\u00e1n destaca por su vigencia tecnol\u00f3gica y un dise\u00f1o moderno\n",
+            "imagen": "Mirage 1.2 GLX CVT Sedan.jpg"
+        },
+        "Mirage 1.2 GLS MT Hatchback": {
+            "marca": "Mitsubishi",
+            "modelo": "Mirage 1.2 GLS MT Hatchback",
+            "precio": "134999",
+            "a\u00f1o_de_fabricacion": "2018",
+            "caballos_de_fuerza": "76",
+            "capacidad": "5",
+            "peso": "1335",
+            "consumo_conbinado": "4.2",
+            "dimensiones": {
+                "largo": "4.305",
+                "ancho": "1.670",
+                "alto": "1.515"
+            },
+            "descripcion": "Es un sed\u00e1n sumamente confiable y duradero que sobresale por ofrecer uno de los rendimientos de gasolina m\u00e1s altos del mercado, lo que se traduce en un gran ahorro diario.\n",
+            "imagen": "Mirage 1.2 GLS MT Hatchback.jpg"
+        },
+        "Mirage 1.2.1 GLX CVT Sedan ": {
+            "marca": "Mitsubishi",
+            "modelo": "Mirage 1.2.1 GLX CVT Sedan ",
+            "precio": "231999",
+            "a\u00f1o_de_fabricacion": "2026",
+            "caballos_de_fuerza": "76",
+            "capacidad": "5",
+            "peso": "1320",
+            "consumo_conbinado": "4.4",
+            "dimensiones": {
+                "largo": "4.305",
+                "ancho": "1.670",
+                "alto": "1.515"
+            },
+            "descripcion": "Este sed\u00e1n destaca por su vigencia tecnol\u00f3gica y un dise\u00f1o moderno\n",
+            "imagen": "Mirage 1.2.1 GLX CVT Sedan .jpg"
+        },
+        "Mitsubishi Xpander 1.5 LIMITED AUTO Minivan": {
+            "marca": "Mitsubishi",
+            "modelo": "Mitsubishi Xpander 1.5 LIMITED AUTO Minivan",
+            "precio": "278999",
+            "a\u00f1o_de_fabricacion": "2023",
+            "caballos_de_fuerza": "103",
+            "capacidad": "7",
+            "peso": "1790",
+            "consumo_conbinado": "6.5",
+            "dimensiones": {
+                "largo": "4.595",
+                "ancho": "1.750",
+                "alto": "1.750"
+            },
+            "descripcion": "Este sed\u00e1n destaca por su vigencia tecnol\u00f3gica y un dise\u00f1o moderno\n",
+            "imagen": "Mitsubishi Xpander 1.5 LIMITED AUTO Minivan.jpg"
+        },
+        "Mitsubishi Xpander 1.5 GLS AUTO Minivan": {
+            "marca": "Mitsubishi",
+            "modelo": "Mitsubishi Xpander 1.5 GLS AUTO Minivan",
+            "precio": "306999",
+            "a\u00f1o_de_fabricacion": "2026",
+            "caballos_de_fuerza": "103",
+            "capacidad": "7",
+            "peso": "1840",
+            "consumo_conbinado": "6.5",
+            "dimensiones": {
+                "largo": "4.595",
+                "ancho": "1.750",
+                "alto": "1.750"
+            },
+            "descripcion": "Este sed\u00e1n destaca por su vigencia tecnol\u00f3gica y un dise\u00f1o moderno\n",
+            "imagen": "Mitsubishi Xpander 1.5 GLS AUTO Minivan.jpg"
         }
     }
 }
