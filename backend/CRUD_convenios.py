@@ -2,11 +2,15 @@
 import shutil
 import os
 import json
+from backend.CRUD import Libro_Mayor
 
 class Convenios:
     def __init__(self, ruta = "datos/convenios/convenios_libro_mayor.json"):
         self.json = ruta
         self.data = self.cargar_json()
+
+        slt = Libro_Mayor()
+        self.__slt = slt.data
 
     def cargar_json(self):
         try:
@@ -65,6 +69,44 @@ class Convenios:
         else:
             return False
 
+
+    def auto_a_local(self, auto, id_local_n):
+        dic_local = self.__slt["locales"][id_local_n]
+        dic_auto = self.data[auto["marca"]][auto["modelo"]]
+        dic_codigos = self.__slt["directorios"]["D-locales"]
+
+        codigo_local = dic_local["id_local"]
+        codigo = dic_codigos["repertorio"]
+        llave = codigo.format(id_local = codigo_local)
+
+        print(auto)
+        print(id_local_n)
+        print(llave)
+
+        if not os.path.exists(f"datos/locales/{id_local_n}/{llave}/autos.json"):
+            with open(f"datos/locales/{id_local_n}/{llave}/autos.json", "w", encoding="utf-8") as f:
+                diccionario_puro = {
+                    "autos" : {}
+                }
+                json.dump(diccionario_puro, f, ensure_ascii=False, indent=4)
+
+        with open(f"datos/locales/{id_local_n}/{llave}/autos.json", "r", encoding="utf-8") as f:
+            data_d_l_r = json.load(f)
+
+        marca = dic_auto["marca"]
+        modelo = dic_auto["modelo"]
+
+        if marca not in data_d_l_r["autos"]:
+            data_d_l_r["autos"][marca] = []
+
+        if modelo not in data_d_l_r["autos"][marca]:
+            data_d_l_r["autos"][marca].append(modelo)
+
+        try:
+            with open(f"datos/locales/{id_local_n}/{llave}/autos.json", "w", encoding="utf-8") as f:
+                json.dump(data_d_l_r, f, indent=4)
+        except:
+            pass
         
 
         

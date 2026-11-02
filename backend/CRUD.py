@@ -13,7 +13,7 @@ class Libro_Mayor:
         try:
             with open(self.json, "r", encoding="utf-8") as f:
                 return json.load(f)
-        #hacemos que el codigo no siga corriendo si es que no se encuentrea el json
+        #hacemos que el codigo no siga corriendo si es que no se encuentrea el json, hay que correjir
         except(FileNotFoundError, FileExistsError, PermissionError, json.JSONDecodeError) as e:
             raise RuntimeError(f"ERROR: No se pudo leer el json: {e}")
 
