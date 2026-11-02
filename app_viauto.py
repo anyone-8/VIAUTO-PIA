@@ -2,7 +2,7 @@
 import customtkinter as ctk
 from frontend.pantalla_inicio_sesion import Inicio_sesion
 from frontend.menu_principal_administradores import principal_administradores
-from frontend.gui_menu_usuario import Menu_Usuario
+from frontend.gui_menu_usuario_v2 import Menu_Usuario
 
 #definimos la pantalla de incio
 class app_viauto(ctk.CTk):
@@ -21,16 +21,16 @@ class app_viauto(ctk.CTk):
     def iniciador_menu_principal(self):
         self.geometry("1500x1000")
         if self.menu_incio_sesion.acceso == "usuarios":
-            self.menu_principa_usuarios()
+            self.menu_principal_usuarios()
         elif self.menu_incio_sesion.acceso == "administradores":
             self.title("Menu Administradores")
             self.menu_principal_administradores()
 
-    def menu_principa_usuarios(self):
+    def menu_principal_usuarios(self):
         self.menu_usuario = Menu_Usuario(
             master=self,
-            width=1000,
-            height=700
+            width=1500,
+            height=1000
         )
         self.menu_usuario.place(
             relx=0.5,
