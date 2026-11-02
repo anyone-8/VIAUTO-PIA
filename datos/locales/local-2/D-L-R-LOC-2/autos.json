@@ -1,0 +1,18 @@
+{
+    "autos": {
+        "Chevrolet": [
+            "Aveo 1.5 LT D AUTO Sedan"
+        ],
+        "Volkswagen": [
+            "Jetta 2.5 TRENDLINE TIP. Sedan",
+            "Jetta 2.5 TRENDLINE TIP. Sedan AZUL"
+        ],
+        "Hyundai": [
+            "Creta 1.6 GLS AUTO Suv",
+            "Accent 1.6 GL MID Sedan"
+        ],
+        "KIA": [
+            "Rio 1.6 LX Sedan ROJO"
+        ]
+    }
+}

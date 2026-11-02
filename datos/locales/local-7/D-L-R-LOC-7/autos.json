@@ -1,0 +1,20 @@
+{
+    "autos": {
+        "Chevrolet": [
+            "1.2 LT B MT Hatchback",
+            "Onix 1.0 PREMIER REDLINE E AUTO Sedan",
+            "Onix 1.0 LT D AUTO Sedan AZUL",
+            "Spark 1.4 LT B MT Hatchback",
+            "Trax 1.8 C PREMIER AT Suv"
+        ],
+        "Volkswagen": [
+            "Jetta 2.5 TRENDLINE TIP. Sedan AZUL",
+            "Jetta 2.5 TRENDLINE TIP. Sedan",
+            "Polo 1.6 COMFORTLINE PLUS AUTO",
+            "Gol 1.6 5 PTAS. TRENDLINE Hatchback"
+        ],
+        "Ford": [
+            "Fiesta 1.6 SE MT Sedan"
+        ]
+    }
+}

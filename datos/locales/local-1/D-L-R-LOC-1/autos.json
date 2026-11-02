@@ -1,0 +1,14 @@
+{
+    "autos": {
+        "Nissan": [
+            "Versa 1.6 SENCE",
+            "March 1.6 ADVANCE",
+            "March 1.6"
+        ],
+        "Chevrolet": [
+            "Spark 1.4 LT B MT Hatchback",
+            "Trax 1.8 C PREMIER AT Suv",
+            "Trax 1.8 A LS MT Suv"
+        ]
+    }
+}

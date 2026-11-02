@@ -1,0 +1,17 @@
+{
+    "autos": {
+        "Nissan": [
+            "Sentra 2.0 ADVANCE NARANJA",
+            "Kicks 1.6 ADVANCE NEGRO"
+        ],
+        "Chevrolet": [
+            "Aveo 1.5 LS D Seda",
+            "Aveo 1.5 LT D AUTO Sedan",
+            "Onix 1.0 LT D AUTO Sedan"
+        ],
+        "Hyundai": [
+            "Creta 1.6 GLS AUTO Suv",
+            "Accent 1.6 GL MID Sedan"
+        ]
+    }
+}

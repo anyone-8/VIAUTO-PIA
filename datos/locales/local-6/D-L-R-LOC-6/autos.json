@@ -1,0 +1,16 @@
+{
+    "autos": {
+        "Nissan": [
+            "Versa 1.6 PLATINUM"
+        ],
+        "Chevrolet": [
+            "Aveo 1.5 LT D AUTO Sedan",
+            "Aveo 1.5 LS D Seda",
+            "Spark 1.4 LT B MT Hatchback",
+            "Trax 1.8 A LS MT Suv"
+        ],
+        "Volkswagen": [
+            "Jetta 2.5 TRENDLINE TIP. Sedan"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "autos": {
+        "Mitsubishi": [
+            "Mitsubishi Xpander 1.5 GLS AUTO Minivan",
+            "Mitsubishi Xpander 1.5 LIMITED AUTO Minivan"
+        ],
+        "Suzuki": [
+            "Swift 1.4 BOOSTERJET SPORT AUTO",
+            "Swift 1.2 GLS AUTO Hatchback"
+        ],
+        "KIA": [
+            "Forte 2.0 L MT Sedan",
+            "Rio 1.6 LX Sedan"
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "autos": {
+        "Nissan": [
+            "Versa 1.6 PLATINUM",
+            "Versa 1.6 SENCE",
+            "March 1.6"
+        ],
+        "Ford": [
+            "Fusion 2.0 GTDI TITANIUM PLUS AT Sedan",
+            "Figo 1.5 TITANIUM AUTO Sedan"
+        ],
+        "Volkswagen": [
+            "Jetta 2.5 TRENDLINE TIP. Sedan"
+        ],
+        "Chevrolet": [
+            "Spark 1.4 LT B MT Hatchback"
+        ]
+    }
+}
