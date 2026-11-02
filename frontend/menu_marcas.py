@@ -3,10 +3,12 @@ import customtkinter as ctk
 from backend.CRUD_convenios import Convenios
 
 class menu_marcas(ctk.CTkFrame):
-    def __init__(self, master, **kwargs):
+    def __init__(self, master, menu_anterior, **kwargs):
         super().__init__(master, **kwargs)
 
         self.__convenios = Convenios()
+
+        self.opciones = menu_anterior
 
         self.__datos = self.__convenios.data
 
@@ -19,12 +21,14 @@ class menu_marcas(ctk.CTkFrame):
         font1 = ctk.CTkFont(family="helvetica", size=28, weight="bold")
 
         titulo = ctk.CTkLabel(self, text="Marcas Registradas", font=font1)
+        volver = ctk.CTkButton(self, text="volver", width=100, height=40, command=self.salir)
         contenedor = ctk.CTkScrollableFrame(self, width=500, height=500)
         añadir_marca = ctk.CTkButton(self, text="añadir", font=font1, width=500, height=40, command=self.añadir)
 
         titulo.place(relx=0.5, rely=0.2, anchor="center")
         contenedor.place(relx=0.5, rely=0.5, anchor="center")
         añadir_marca.place(relx=0.5, rely=0.8, anchor="center")
+        volver.place(relx=0.2, rely=0.2, anchor="nw")
 
         for marca in self.__marcas:
             frame = ctk.CTkLabel(master=contenedor, text=marca)
@@ -47,5 +51,7 @@ class menu_marcas(ctk.CTkFrame):
 
         self.__convenios.añadir_marca(marca)
 
-
+    def salir(self):
+        self.destroy()
+        self.opciones()
 

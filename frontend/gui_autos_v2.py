@@ -6,13 +6,14 @@ import customtkinter as ctk
 from PIL import Image
 
 class Menu_gui_autos(ctk.CTkFrame):
-    def __init__(self, master, **kwargs):
+    def __init__(self, master, menu_anterior, **kwargs):
         super().__init__(master, **kwargs)
 
         self.libro = Libro_Mayor()
         self.locales = self.libro.data["locales"]
         self.convenios = Convenios()
         self.__data = self.convenios.data
+        self.opciones = menu_anterior
 
         self.__pagina = 1
 
@@ -33,6 +34,9 @@ class Menu_gui_autos(ctk.CTkFrame):
 
 
     def general_mostrar_autos(self):
+        for widget in self.winfo_children():
+            widget.place_forget()
+
         font1 = ctk.CTkFont(family="Calibri", size=26, weight="bold")
         font2 =ctk.CTkFont(family="Calibri", size=16, weight="bold")
 
@@ -41,7 +45,7 @@ class Menu_gui_autos(ctk.CTkFrame):
         filtro = ctk.CTkOptionMenu(self, width=300, height=30, values=["sin filtro", "por marca", "por precio"], font=font2, command=lambda choice: self.opciones_buscar(choice))
         boton_atras = ctk.CTkButton(self, text="←", font=font2, width=500, height=50, command=lambda: self.navegacion(-1))
         boton_adelante = ctk.CTkButton(self, text="→", font=font2, width=500, height=50, command=lambda: self.navegacion(1))
-        boton_volver = ctk.CTkButton(self, text="regresar", font=font2, width=150, height=50)
+        boton_volver = ctk.CTkButton(self, text="regresar", font=font2, width=150, height=50, command=self.salir)
         boton_añadir = ctk.CTkButton(self, text="añadir auto", font=font2, width=1000, height=50, command=self.seleccion_añadir_auto)
 
         self._contenedor_autos.place(relx=0.5, rely=0.4, anchor="center")
@@ -71,8 +75,11 @@ class Menu_gui_autos(ctk.CTkFrame):
     def navegacion(self, cambio):
         print(f"el cambio fue: {cambio}")
         print(f"la pagina incialmente es: {self.__pagina}")
+        
         n_autos = len(self.__modelos)
         n_paginas = (n_autos - 1) // 5 + 1
+
+        print(f"Las paginas totales son: {n_paginas}")
 
         if cambio == None:
             cambio = 0
@@ -84,8 +91,12 @@ class Menu_gui_autos(ctk.CTkFrame):
 
         print(f"la pagina actual es: {self.__pagina}")
 
-        if self.__pagina == 0:
+        if self.__pagina <= 0:
             self.__pagina = 1
+
+        if self.__pagina >= n_paginas + 1:
+            self.__pagina = n_paginas
+            print(f"me vine por aqui en el if: {self.__pagina}, {n_paginas}")
 
         self.estructuracion_autos(self.__pagina)
 
@@ -127,8 +138,55 @@ class Menu_gui_autos(ctk.CTkFrame):
             iteracion += 1
 
 
-    def menu_autos_individual(self, dic):
-        pass
+    def menu_autos_individual(self, auto):
+        for widget in self.winfo_children():
+            widget.place_forget()
+
+        marca = auto["marca"]
+        modelo = auto["modelo"]
+
+        datos = self.__data[marca][modelo]
+        font1 = ctk.CTkFont(family="Calibri", size=24, weight="bold")
+
+        imagen = Image.open(f"datos/convenios/{marca}/{datos["imagen"]}")
+
+        imagen_final = ctk.CTkImage(light_image=imagen, dark_image=imagen, size=(300, 300))
+
+        texto = f"""
+        marca: {datos["marca"]}
+        modelo: {datos["modelo"]}
+        precio: {datos["precio"]}
+        año de fabricacion: {datos["año_de_fabricacion"]}
+        caballos de fuerza: {datos["caballos_de_fuerza"]}
+        capacidad: {datos["capacidad"]}
+        peso: {datos["peso"]}
+        consumo conbinado: {datos["consumo_conbinado"]}
+        dimensiones
+            largo: {datos["dimensiones"]["largo"]}
+            ancho: {datos["dimensiones"]["ancho"]}
+            alto: {datos["dimensiones"]["alto"]}
+        """
+
+        mostrar_imagen = ctk.CTkLabel(self, image=imagen_final, text="")
+        datos_auto = ctk.CTkLabel(
+            self, 
+            text=texto,
+            justify="left",
+            font=font1
+            )
+        caracteristicas = ctk.CTkTextbox(self, width=300, height=250, activate_scrollbars=True)
+        boton_regresar = ctk.CTkButton(self, text="volver", width=10, height=40, command=self.general_mostrar_autos)
+
+        caracteristicas.configure(state="normal")
+        caracteristicas.insert("1.0", datos["descripcion"])
+        caracteristicas.configure(state="disabled")
+
+        mostrar_imagen.place(relx=0.2, rely=0.2, anchor="nw")
+        datos_auto.place(relx=0.4, rely=0.2, anchor="nw")
+        caracteristicas.place(relx=0.2, rely=0.53, anchor="nw")
+        boton_regresar.place(relx=0.7, rely=0.2, anchor="nw")
+
+
 
     def seleccion_añadir_auto(self):
         for widget in self.winfo_children():
@@ -260,6 +318,8 @@ class Menu_gui_autos(ctk.CTkFrame):
         self.convenios.añadir_modelo(coche, imagen)
 
         
-
+    def salir(self):
+        self.destroy()
+        self.opciones()
         
         
