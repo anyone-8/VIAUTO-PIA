@@ -772,6 +772,23 @@
             },
             "descripcion": "Hyundai Creta 2019 seminueva que destaca por su excelente durabilidad, gran habitabilidad y un manejo sumamente suave.\n",
             "imagen": "Hyundai Creta 1.6 GLS PREMIUM AUTO Suv AZUL.jpg"
+        },
+        "El cangremovil": {
+            "marca": "Hyundai",
+            "modelo": "El cangremovil",
+            "precio": "1000000",
+            "a\u00f1o_de_fabricacion": "2004",
+            "caballos_de_fuerza": "2",
+            "capacidad": "2",
+            "peso": "0.5",
+            "consumo_conbinado": "6.7",
+            "dimensiones": {
+                "largo": "0.030",
+                "ancho": "0.022",
+                "alto": "0.015"
+            },
+            "descripcion": "Vamos a ciudad almeja",
+            "imagen": "El cangremovil.jpg"
         }
     },
     "KIA": {
@@ -876,6 +893,74 @@
             },
             "descripcion": "Esta es una compra inteligente: m\u00e1s accesible que el promedio y con ahorro real desde el primer d\u00eda. Ha tenido uso moderado, con kilometraje por debajo del est\u00e1ndar anual. Ofrece manejo eficiente y con buen control.\n",
             "imagen": "Forte 2.0 L MT Sedan.jpg"
+        },
+        "Kia K3 Sed\u00e1n 2027": {
+            "marca": "KIA",
+            "modelo": "Kia K3 Sed\u00e1n 2027",
+            "precio": "305000",
+            "a\u00f1o_de_fabricacion": "2027",
+            "caballos_de_fuerza": "98",
+            "capacidad": "5",
+            "peso": "1120",
+            "consumo_conbinado": "20.6",
+            "dimensiones": {
+                "largo": "4.545",
+                "ancho": "1.765",
+                "alto": "1.475"
+            },
+            "descripcion": "Es el sustituto directo del famoso Kia Rio; un sed\u00e1n subcompacto pensado para el uso diario que destaca por su gran espacio en cajuela, bajo consumo de gasolina y que mantiene las 6 bolsas de aire de serie desde su versi\u00f3n m\u00e1s econ\u00f3mica KIA K3 2026 en M\u00e9xico: Precios Oficiales desde ,400 pesos",
+            "imagen": "Kia K3 Sed\u00e1n 2027.jpg"
+        },
+        "Sonet LX MT": {
+            "marca": "KIA",
+            "modelo": "Sonet LX MT",
+            "precio": "398400",
+            "a\u00f1o_de_fabricacion": "2027",
+            "caballos_de_fuerza": "113",
+            "capacidad": "5",
+            "peso": "1185",
+            "consumo_conbinado": "15.14",
+            "dimensiones": {
+                "largo": "4.110",
+                "ancho": "1.790",
+                "alto": "1.642"
+            },
+            "descripcion": "Una mini SUV urbana que destaca por ofrecer una posici\u00f3n de manejo elevada Sonet 2027 | SUV | Kia M\u00e9xico, un dise\u00f1o exterior moderno con rines de aluminio de 16 pulgadas y un paquete de seguridad muy completo que incluye 6 bolsas de aire de serie Sonet 2027 | SUV | Kia M\u00e9xico.",
+            "imagen": "Sonet LX MT.jpg"
+        },
+        "K4 Sed\u00e1n L TM": {
+            "marca": "KIA",
+            "modelo": "K4 Sed\u00e1n L TM",
+            "precio": "407000",
+            "a\u00f1o_de_fabricacion": "2027",
+            "caballos_de_fuerza": "147",
+            "capacidad": "5",
+            "peso": "1320",
+            "consumo_conbinado": "17.1",
+            "dimensiones": {
+                "largo": "4.710",
+                "ancho": "1.850",
+                "alto": "1.440"
+            },
+            "descripcion": "Este es el flamante sustituto global del Forte. Cuenta con un dise\u00f1o futurista de estilo fastback, un espacio en cajuela masivo de 508 litros y una estructura sumamente segura que ya incluye 6 bolsas de aire de serie y una excelente calificaci\u00f3n en pruebas de choque.",
+            "imagen": "K4 Sed\u00e1n L TM.jpg"
+        },
+        "Seltos LX": {
+            "marca": "KIA",
+            "modelo": "Seltos LX",
+            "precio": "499900",
+            "a\u00f1o_de_fabricacion": "2027",
+            "caballos_de_fuerza": "113",
+            "capacidad": "5",
+            "peso": "1325",
+            "consumo_conbinado": "17.96",
+            "dimensiones": {
+                "largo": "4.385",
+                "ancho": "1.800",
+                "alto": "1.635"
+            },
+            "descripcion": "Destaca por incorporar una enorme pantalla de infoentretenimiento de 27 pulgadas en su tablero Kia Seltos 2027 precios y versiones El Universal, freno de mano electr\u00f3nico y sensores de estacionamiento frontales y traseros desde su opci\u00f3n base Kia Seltos 2027  Versi\u00f3n turbo y caracter\u00edsticas.",
+            "imagen": "Seltos LX.jpg"
         }
     },
     "Suzuki": {
@@ -929,6 +1014,23 @@
             },
             "descripcion": "Vive el manejo m\u00e1s divertido con la tranquilidad de una seguridad completa. Esta versi\u00f3n manual trae gran equipo: 6 bolsas de aire, control de crucero, navegaci\u00f3n, bot\u00f3n de encendido y faros de niebla. Su oferta financiada est\u00e1 muy por debajo del mercado y de uno nuevo equivalente, as\u00ed que obtienes mucho desempe\u00f1o por menos.\n",
             "imagen": "Swift 1.4 BOOSTERJET SPORT GLX Hatchback.jpg"
+        },
+        "Baleno": {
+            "marca": "Suzuki",
+            "modelo": "Baleno",
+            "precio": "390000",
+            "a\u00f1o_de_fabricacion": "2026",
+            "caballos_de_fuerza": "110",
+            "capacidad": "5",
+            "peso": "1800",
+            "consumo_conbinado": "6.7",
+            "dimensiones": {
+                "largo": "1.8",
+                "ancho": "1.27",
+                "alto": "1.4"
+            },
+            "descripcion": "Faltan validaciones en los campos enteros\n",
+            "imagen": "Baleno.jpg"
         }
     },
     "Toyota": {
@@ -1120,6 +1222,59 @@
             },
             "descripcion": "Este sed\u00e1n destaca por su vigencia tecnol\u00f3gica y un dise\u00f1o moderno\n",
             "imagen": "Mitsubishi Xpander 1.5 GLS AUTO Minivan.jpg"
+        }
+    },
+    "Mercedes": {
+        "AMG C 63 S E Performance": {
+            "marca": "Mercedes",
+            "modelo": "AMG C 63 S E Performance",
+            "precio": "110000",
+            "a\u00f1o_de_fabricacion": "2024",
+            "caballos_de_fuerza": "680",
+            "capacidad": "6",
+            "peso": "2165",
+            "consumo_conbinado": "6.9",
+            "dimensiones": {
+                "largo": "4.842",
+                "ancho": "1.824",
+                "alto": "1.458"
+            },
+            "descripcion": "Sed\u00e1n deportivo de alto rendimiento que combina un motor de cuatro cilindros en l\u00ednea con tecnolog\u00eda h\u00edbrida enchufable derivada de la F\u00f3rmula 1",
+            "imagen": "AMG C 63 S E Performance.jpg"
+        },
+        "G 550 (Clase G)": {
+            "marca": "Mercedes",
+            "modelo": "G 550 (Clase G)",
+            "precio": "143000",
+            "a\u00f1o_de_fabricacion": "2025",
+            "caballos_de_fuerza": "443",
+            "capacidad": "5",
+            "peso": "2485",
+            "consumo_conbinado": "14.7",
+            "dimensiones": {
+                "largo": "4.617",
+                "ancho": "1.931",
+                "alto": "2.039"
+            },
+            "descripcion": "Ic\u00f3nico todoterreno de lujo que mantiene su dise\u00f1o cuadrado cl\u00e1sico, ahora equipado con un motor de seis cilindros en l\u00ednea con tecnolog\u00eda microh\u00edbrida para un mejor desempe\u00f1o fuera del asfalto.",
+            "imagen": "G 550 (Clase G).jpg"
+        },
+        "Clase C Sed\u00e1n": {
+            "marca": "Mercedes",
+            "modelo": "Clase C Sed\u00e1n",
+            "precio": "1109000",
+            "a\u00f1o_de_fabricacion": "2026",
+            "caballos_de_fuerza": "204",
+            "capacidad": "5",
+            "peso": "1650",
+            "consumo_conbinado": "6.4",
+            "dimensiones": {
+                "largo": "4.751",
+                "ancho": "1.820",
+                "alto": "1438"
+            },
+            "descripcion": "Un sed\u00e1n ejecutivo mediano de gasolina que destaca por su tracci\u00f3n trasera, un gran balance de consumo de combustible y un interior cargado de pantallas de alta tecnolog\u00eda digital heredadas de sus hermanos mayores",
+            "imagen": "Clase C Sed\u00e1n.jpg"
         }
     }
 }
