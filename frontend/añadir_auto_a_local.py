@@ -5,7 +5,7 @@ from backend.CRUD_convenios import Convenios
 from PIL import Image
 
 class Menu_Sutir_Local(ctk.CTkFrame):
-    def __init__(self, master, **kwargs):
+    def __init__(self, master, menu_anterior, **kwargs):
         super().__init__(master, **kwargs)
 
         self.libro = Libro_Mayor()
@@ -14,6 +14,10 @@ class Menu_Sutir_Local(ctk.CTkFrame):
         self.codigos_locales = self.libro.data["directorios"]["D-locales"]
         self.convenios = Convenios()
         self.__data = self.convenios.data
+        self.opciones = menu_anterior
+        self.__paginacion = None
+        self.__estado = False
+        self.__texto_estado = "prueba"
 
         self.__pagina = 1
 
@@ -32,9 +36,18 @@ class Menu_Sutir_Local(ctk.CTkFrame):
         self.seleccionar_local()
 
     def seleccionar_local(self):
-        contenedor = ctk.CTkScrollableFrame(self, width=500, height=600)
+        for widget in self.winfo_children():
+            widget.place_forget()
+
+        font1 = ctk.CTkFont(family="Calibri", size=24, weight="bold")
+
+        volver = ctk.CTkButton(self, text="volver", width=100, height=40, command=self.salir)
+        titulo = ctk.CTkLabel(self, text="Locales disponibles", font=font1)
+        contenedor = ctk.CTkScrollableFrame(self, width=500, height=500)
 
         contenedor.place(relx=0.5, rely=0.55, anchor="center")
+        titulo.place(relx=0.5, rely=0.18, anchor="center")
+        volver.place(relx=0.2, rely=0.2, anchor="nw")
 
         for id_local, local in self.locales_dic.items():
             i_local = local["nombre"]
@@ -47,6 +60,12 @@ class Menu_Sutir_Local(ctk.CTkFrame):
         for widget in self.winfo_children():
             widget.place_forget()
 
+        if self.__estado == True:
+            texto = f"auto {self.__texto_estado} añadido con exito"
+            estado = ctk.CTkLabel(self, text=texto)
+            estado.place(relx=0.5, rely=0.6, anchor="center")
+            self.__estado = False
+
         font1 = ctk.CTkFont(family="Calibri", size=26, weight="bold")
         font2 =ctk.CTkFont(family="Calibri", size=16, weight="bold")
 
@@ -54,7 +73,7 @@ class Menu_Sutir_Local(ctk.CTkFrame):
         titulo = ctk.CTkLabel(self, text="Elije el auto a añadir", font=font1)
         boton_atras = ctk.CTkButton(self, text="←", font=font2, width=500, height=50, command=lambda: self.navegacion(-1, id_local))
         boton_adelante = ctk.CTkButton(self, text="→", font=font2, width=500, height=50, command=lambda: self.navegacion(1, id_local))
-        boton_volver = ctk.CTkButton(self, text="regresar", font=font2, width=150, height=50)
+        boton_volver = ctk.CTkButton(self, text="regresar", font=font2, width=150, height=50,command=self.seleccionar_local)
 
         self._contenedor_autos.place(relx=0.5, rely=0.4, anchor="center")
         titulo.place(relx=0.5, rely=0.2, anchor="center")
@@ -62,7 +81,7 @@ class Menu_Sutir_Local(ctk.CTkFrame):
         boton_adelante.place(relx=0.51, rely=0.7, anchor="nw")
         boton_volver.place(relx=0.1, rely=0.2, anchor="nw")
 
-        self.estructuracion_autos(1, id_local)
+        self.estructuracion_autos(self.__pagina, id_local)
 
         for i in range(5):
             self._contenedor_autos.grid_columnconfigure(i, weight=1, pad=10)
@@ -70,22 +89,9 @@ class Menu_Sutir_Local(ctk.CTkFrame):
         for i in range(2):
             self._contenedor_autos.grid_rowconfigure(i, weight=1, pad=10)
 
-    def opciones_buscar(self, opcion):
-        if opcion == "sin filtro":
-            self.sin_filtro()
-        elif opcion == "por marca":
-            pass
-        elif opcion == "por precio":
-            pass
-
     def navegacion(self, cambio, id_local):
-        print(f"el cambio fue: {cambio}")
-        print(f"la pagina incialmente es: {self.__pagina}")
-        
         n_autos = len(self.__modelos)
         n_paginas = (n_autos - 1) // 5 + 1
-
-        print(f"Las paginas totales son: {n_paginas}")
 
         if cambio == None:
             cambio = 0
@@ -95,14 +101,11 @@ class Menu_Sutir_Local(ctk.CTkFrame):
         else:
             print("me valio madres y no sume")
 
-        print(f"la pagina actual es: {self.__pagina}")
-
         if self.__pagina <= 0:
             self.__pagina = 1
 
         if self.__pagina >= n_paginas + 1:
             self.__pagina = n_paginas
-            print(f"me vine por aqui en el if: {self.__pagina}, {n_paginas}")
 
         self.estructuracion_autos(self.__pagina, id_local)
 
@@ -110,10 +113,21 @@ class Menu_Sutir_Local(ctk.CTkFrame):
         for widget in self._contenedor_autos.winfo_children():
             widget.grid_forget()
 
-        print(f"la pagina actual es: {pagina}")
+ 
         lim_inferior = 5*(pagina - 1)
-        lim_superior = 5*(pagina) - 1
         iteracion = 0
+
+        if self.__paginacion in self.winfo_children():
+            self.__paginacion.destroy()
+
+        #calculamos las paginas totales nuevamente
+        n_autos = len(self.__modelos)
+        n_paginas = (n_autos - 1) // 5 + 1
+
+        texto_paginacion = f"{self.__pagina} / {n_paginas}"
+        self.__paginacion = ctk.CTkLabel(self, text=texto_paginacion)
+
+        self.__paginacion.place(relx=0.5, rely=0.65, anchor="center")
 
         for i in range(lim_inferior, lim_inferior + 5):
             if i >= len(self.autos):
@@ -144,6 +158,17 @@ class Menu_Sutir_Local(ctk.CTkFrame):
             iteracion += 1
 
     def añadir_auto_a_local(self, auto, id_local):
-        self.convenios.auto_a_local(auto, id_local)
+        if self.convenios.auto_a_local(auto, id_local) == True:
+            self.__estado = True
+            print(f"auto: {auto["modelo"]}")
+            self.__texto_estado = auto["modelo"]
+            print(self.__texto_estado)
+            self.seleccionar_auto(id_local)
+        else:
+            self.__texto_estado = "no"
+            self.seleccionar_auto(id_local)
+            
         
-
+    def salir(self):
+        self.destroy()
+        self.opciones()

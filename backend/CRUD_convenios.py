@@ -34,7 +34,7 @@ class Convenios:
     def añadir_marca(self, marca):
         #verificamos si la marca ya existe
         if marca in self.data:
-            return "marca ya existente"
+            return False
 
         #añadimos nueva marca
         self.data.update({f"{marca}": {}})
@@ -43,10 +43,10 @@ class Convenios:
             os.makedirs(carpeta, exist_ok=True)
 
 
-            return f"se guardo la marca {marca} con exito"
+            return True
         else:
             self.data.pop(marca, None)
-            return "No se pudo guardar la marca"
+            return False
 
     #en base a un diccionario con todos los elementos se realiza el llenado de un nuevo modelo de auto
     def añadir_modelo(self, formulario, imagen):
@@ -105,8 +105,11 @@ class Convenios:
         try:
             with open(f"datos/locales/{id_local_n}/{llave}/autos.json", "w", encoding="utf-8") as f:
                 json.dump(data_d_l_r, f, indent=4)
+            return True
         except:
-            pass
+            return False
+
+        
         
 
         

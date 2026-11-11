@@ -1,6 +1,7 @@
 import customtkinter as ctk
 
 class SimuladorFinanciamiento(ctk.CTkToplevel):
+    #ponemos datos para asegurar que el programa corra aunque no hayan datos
     def __init__(self, master=None, precio_fijo=150000, **kwargs):
         super().__init__(master, **kwargs)
         
@@ -45,7 +46,7 @@ class SimuladorFinanciamiento(ctk.CTkToplevel):
         
         total_con_intereses = monto * (1 + self.meses * (tasa / 12))
         monto_individual = total_con_intereses / self.meses
-        suma_monto_y_total = monto + total_con_intereses
+        suma_monto_y_total = enganche + total_con_intereses
         
         
         frame_encabezado = ctk.CTkFrame(self.scroll_container, fg_color="transparent")
@@ -77,12 +78,12 @@ class SimuladorFinanciamiento(ctk.CTkToplevel):
         
         f_monto = ctk.CTkFrame(frame_totales, fg_color="transparent")
         f_monto.pack(fill="x", padx=10, pady=2)
-        ctk.CTkLabel(f_monto, text="Monto Neto Financiado:", font=ctk.CTkFont(size=12)).pack(side="left")
-        ctk.CTkLabel(f_monto, text=f"${monto:,.2f}", font=ctk.CTkFont(size=12)).pack(side="right")
+        ctk.CTkLabel(f_monto, text="Enganche (10%):", font=ctk.CTkFont(size=12)).pack(side="left")
+        ctk.CTkLabel(f_monto, text=f"${enganche:,.2f}", font=ctk.CTkFont(size=12)).pack(side="right")
         
         f_total = ctk.CTkFrame(frame_totales, fg_color="transparent")
         f_total.pack(fill="x", padx=10, pady=2)
-        ctk.CTkLabel(f_total, text="Total con Intereses:", font=ctk.CTkFont(size=12)).pack(side="left")
+        ctk.CTkLabel(f_total, text="Monto restante con Interese (12%):", font=ctk.CTkFont(size=12)).pack(side="left")
         ctk.CTkLabel(f_total, text=f"${total_con_intereses:,.2f}", font=ctk.CTkFont(size=12)).pack(side="right")
         
         

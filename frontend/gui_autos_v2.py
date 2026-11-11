@@ -1,7 +1,8 @@
 #gui autos mejorado
 from backend.CRUD import Libro_Mayor
 from backend.CRUD_convenios import Convenios
-from pathlib import Path
+from frontend.intento_de_amortizacion import SimuladorFinanciamiento
+from backend.leer_locales import lectura_de_locales
 import customtkinter as ctk
 from PIL import Image
 
@@ -14,6 +15,9 @@ class Menu_gui_autos(ctk.CTkFrame):
         self.convenios = Convenios()
         self.__data = self.convenios.data
         self.opciones = menu_anterior
+        self.__paginacion = None
+        self._archivo = ""
+        self.__auto_añadido = None
 
         self.__pagina = 1
 
@@ -35,14 +39,36 @@ class Menu_gui_autos(ctk.CTkFrame):
 
     def general_mostrar_autos(self):
         for widget in self.winfo_children():
-            widget.place_forget()
+            if not isinstance(widget, ctk.CTkToplevel):
+                widget.place_forget()
+
+        if self.__auto_añadido == True:
+            #aviso de que el auto se a añadido
+            estado = ctk.CTkLabel(self, text="Auto añadido con exito")
+            estado.place(relx=0.5, rely=0.6, anchor="center")
+
+            #se añade el False para evitar la aparicion no deseada de la alerta
+            self.__auto_añadido = False
+
+            #se vuelve a cargar los autos debido al nuevo auto
+            self.convenios = Convenios()
+            self.__data = self.convenios.data
+            self.__modelos = [ 
+            modelo 
+            for modelos in self.__data.values() 
+            for modelo in modelos.keys() ]
+
+            self.autos = [
+            {**informacion, "marca": marca, "modelo": clave}
+            for marca, modelos in self.__data.items()
+            for clave, informacion in modelos.items()
+            ]
 
         font1 = ctk.CTkFont(family="Calibri", size=26, weight="bold")
         font2 =ctk.CTkFont(family="Calibri", size=16, weight="bold")
 
         self._contenedor_autos = ctk.CTkFrame(self, width=1300, height=600, bg_color="gray")
         titulo = ctk.CTkLabel(self, text="Autos Convenidos", font=font1)
-        filtro = ctk.CTkOptionMenu(self, width=300, height=30, values=["sin filtro", "por marca", "por precio"], font=font2, command=lambda choice: self.opciones_buscar(choice))
         boton_atras = ctk.CTkButton(self, text="←", font=font2, width=500, height=50, command=lambda: self.navegacion(-1))
         boton_adelante = ctk.CTkButton(self, text="→", font=font2, width=500, height=50, command=lambda: self.navegacion(1))
         boton_volver = ctk.CTkButton(self, text="regresar", font=font2, width=150, height=50, command=self.salir)
@@ -50,13 +76,12 @@ class Menu_gui_autos(ctk.CTkFrame):
 
         self._contenedor_autos.place(relx=0.5, rely=0.4, anchor="center")
         titulo.place(relx=0.5, rely=0.2, anchor="center")
-        filtro.place(relx=0.5, rely=0.25, anchor="center")
         boton_atras.place(relx=0.49, rely=0.7, anchor="ne")
         boton_adelante.place(relx=0.51, rely=0.7, anchor="nw")
         boton_volver.place(relx=0.1, rely=0.2, anchor="nw")
         boton_añadir.place(relx=0.5, rely=0.8, anchor="center")
 
-        self.estructuracion_autos(1)
+        self.estructuracion_autos(self.__pagina)
 
         for i in range(5):
             self._contenedor_autos.grid_columnconfigure(i, weight=1, pad=10)
@@ -64,39 +89,27 @@ class Menu_gui_autos(ctk.CTkFrame):
         for i in range(2):
             self._contenedor_autos.grid_rowconfigure(i, weight=1, pad=10)
 
-    def opciones_buscar(self, opcion):
-        if opcion == "sin filtro":
-            self.sin_filtro()
-        elif opcion == "por marca":
-            pass
-        elif opcion == "por precio":
-            pass
-
     def navegacion(self, cambio):
-        print(f"el cambio fue: {cambio}")
-        print(f"la pagina incialmente es: {self.__pagina}")
-        
+        #calculamos la cantidad de paginas totales con los autos que tenemos
         n_autos = len(self.__modelos)
         n_paginas = (n_autos - 1) // 5 + 1
-
-        print(f"Las paginas totales son: {n_paginas}")
 
         if cambio == None:
             cambio = 0
 
+        #comparamos si el valor total de la pagina esta adentro del rango para hacer o no el cambio
         if self.__pagina >= 1 and self.__pagina <= n_paginas:
             self.__pagina += cambio
         else:
             print("me valio madres y no sume")
 
-        print(f"la pagina actual es: {self.__pagina}")
-
+        #esto evita que el usuario acceda a una pagina diferente a las definidas 
+        #limitando el rango unicamente a las que podemos crear
         if self.__pagina <= 0:
             self.__pagina = 1
 
         if self.__pagina >= n_paginas + 1:
             self.__pagina = n_paginas
-            print(f"me vine por aqui en el if: {self.__pagina}, {n_paginas}")
 
         self.estructuracion_autos(self.__pagina)
 
@@ -104,15 +117,29 @@ class Menu_gui_autos(ctk.CTkFrame):
         for widget in self._contenedor_autos.winfo_children():
             widget.grid_forget()
 
-        print(f"la pagina actual es: {pagina}")
+        #una vez creemos este texto hay que cambiarlo cada vez que se renueva
+        #por ende creamos esta condicion
+        if self.__paginacion in self.winfo_children():
+            self.__paginacion.destroy()
+
+        #calculamos las paginas totales nuevamente
+        n_autos = len(self.__modelos)
+        n_paginas = (n_autos - 1) // 5 + 1
+
+        #creamos el texto que indique en que pagina estamos
+        texto_paginacion = f"{self.__pagina} / {n_paginas}"
+        self.__paginacion = ctk.CTkLabel(self, text=texto_paginacion)
+
+        self.__paginacion.place(relx=0.5, rely=0.65, anchor="center")
+
         lim_inferior = 5*(pagina - 1)
-        lim_superior = 5*(pagina) - 1
         iteracion = 0
 
         for i in range(lim_inferior, lim_inferior + 5):
             if i >= len(self.autos):
                 break
 
+            #buscamos el auto correspondiente a la posicion que ocupa
             marca = self.autos[i]["marca"]
             modelo = self.autos[i]["modelo"]
 
@@ -135,6 +162,8 @@ class Menu_gui_autos(ctk.CTkFrame):
 
             boton_auto.grid(row=0, column=iteracion, padx=10, pady=10, sticky="nsew")
 
+            #se creo este boton ya que aqui se debe llevar un conteno estricto de 0 hasta la cantidad de autos
+            #por lo cual esta variable va confrome a la cantidad de iteraciones y no al rango establecido
             iteracion += 1
 
 
@@ -142,9 +171,13 @@ class Menu_gui_autos(ctk.CTkFrame):
         for widget in self.winfo_children():
             widget.place_forget()
 
+        #se asignan la marca, el modelo y los locales en los que se encuentra el auto
         marca = auto["marca"]
         modelo = auto["modelo"]
 
+        lista_coincidencias = lectura_de_locales(marca, modelo)
+
+        #se busca el diccionario que alberga los datos del auto en especifico
         datos = self.__data[marca][modelo]
         font1 = ctk.CTkFont(family="Calibri", size=24, weight="bold")
 
@@ -153,19 +186,22 @@ class Menu_gui_autos(ctk.CTkFrame):
         imagen_final = ctk.CTkImage(light_image=imagen, dark_image=imagen, size=(300, 300))
 
         texto = f"""
-        marca: {datos["marca"]}
-        modelo: {datos["modelo"]}
-        precio: {datos["precio"]}
-        año de fabricacion: {datos["año_de_fabricacion"]}
-        caballos de fuerza: {datos["caballos_de_fuerza"]}
-        capacidad: {datos["capacidad"]}
-        peso: {datos["peso"]}
-        consumo conbinado: {datos["consumo_conbinado"]}
-        dimensiones
-            largo: {datos["dimensiones"]["largo"]}
-            ancho: {datos["dimensiones"]["ancho"]}
-            alto: {datos["dimensiones"]["alto"]}
+        Marca: {datos["marca"]}
+        Modelo: {datos["modelo"]}
+        Precio: ${datos["precio"]}
+        Año de fabricacion: {datos["año_de_fabricacion"]}
+        Caballos de fuerza: {datos["caballos_de_fuerza"]} HP
+        Capacidad: {datos["capacidad"]} Personas
+        Peso: {datos["peso"]} Kg
+        Consumo conbinado: {datos["consumo_conbinado"]} Km/L
+        Dimensiones
+            Largo: {datos["dimensiones"]["largo"]} m
+            Ancho: {datos["dimensiones"]["ancho"]} m
+            Alto: {datos["dimensiones"]["alto"]} m
         """
+
+        locales_disponibles_texto = ", ".join(lista_coincidencias)
+        texto_locales = "Disponible en: " + locales_disponibles_texto
 
         mostrar_imagen = ctk.CTkLabel(self, image=imagen_final, text="")
         datos_auto = ctk.CTkLabel(
@@ -175,16 +211,25 @@ class Menu_gui_autos(ctk.CTkFrame):
             font=font1
             )
         caracteristicas = ctk.CTkTextbox(self, width=300, height=250, activate_scrollbars=True)
+        locales_disponibles = ctk.CTkTextbox(self, width=500, height=70, activate_scrollbars=True)
+
+        simulacion = ctk.CTkButton(self, text="simulacion de cotizacion", width=200, height=70, command=lambda n = datos["precio"] :self.simular_pagos(n))
         boton_regresar = ctk.CTkButton(self, text="volver", width=10, height=40, command=self.general_mostrar_autos)
 
         caracteristicas.configure(state="normal")
         caracteristicas.insert("1.0", datos["descripcion"])
         caracteristicas.configure(state="disabled")
 
+        locales_disponibles.configure(state="normal")
+        locales_disponibles.insert("1.0", texto_locales)
+        locales_disponibles.configure(state="disabled")
+
         mostrar_imagen.place(relx=0.2, rely=0.2, anchor="nw")
         datos_auto.place(relx=0.4, rely=0.2, anchor="nw")
         caracteristicas.place(relx=0.2, rely=0.53, anchor="nw")
         boton_regresar.place(relx=0.7, rely=0.2, anchor="nw")
+        simulacion.place(relx=0.6, rely=0.7, anchor="nw")
+        locales_disponibles.place(relx=0.5, rely=0.6, anchor="nw")
 
 
 
@@ -196,10 +241,13 @@ class Menu_gui_autos(ctk.CTkFrame):
 
         titulo = ctk.CTkLabel(self, text="Seleccione una marca", font=font1)
         frame_marcas = ctk.CTkScrollableFrame(self, width=600, height=500)
+        boton_volver = ctk.CTkButton(self, text="volver", width=100, height=40, command=self.general_mostrar_autos)
 
         titulo.place(relx=0.5, rely=0.2, anchor="center")
         frame_marcas.place(relx=0.5, rely=0.5, anchor="center")
+        boton_volver.place(relx=0.2, rely=0.2, anchor="nw")
 
+        #se buscan las marcas para poder seleccionarlas
         for marca in self.__data.keys():
             opcion = ctk.CTkButton(frame_marcas, text=marca, width=500, height=30, command=lambda n = marca:self.menu_añadir_auto(n))
 
@@ -211,11 +259,15 @@ class Menu_gui_autos(ctk.CTkFrame):
         for widget in self.winfo_children():
             widget.place_forget()
 
-        validador_numero = (self.register(lambda text: text == "" or text.replace(".", "", 1).isdigit()), "%P")
+        validador_numero = (self.register(lambda text: text == "" or text.replace(".", "", 1).isdigit() and len(text) <= 7), "%P")
 
-        font1 = ctk.CTkFont(family="helvetica", size=18, weight="bold")
+        font1 = ctk.CTkFont(family="helvetica", size=16, weight="bold")
 
         titulo = ctk.CTkLabel(self, text=f"Añadir auto para la marca {marca}", font=font1)
+        boton_volver = ctk.CTkButton(self, text="volver", width=100, height=40, command=self.general_mostrar_autos)
+
+        titulo.place(relx=0.5, rely=0.17, anchor="center")
+        boton_volver.place(relx=0.12, rely=0.2, anchor="nw")
 
 
         self.__modelo_entrada = ctk.CTkEntry(self, width=250, height=30)
@@ -231,20 +283,20 @@ class Menu_gui_autos(ctk.CTkFrame):
         self.__descripcion_entrada = ctk.CTkTextbox(self, width=300, height=150, activate_scrollbars=True)
         imagen_entrada = ctk.CTkButton(self, text="subir imagen", font=font1, width=200, height=50, command=self.subir_imagen)
 
-        modelo_texto = ctk.CTkLabel(self, text="modelo", font=font1)
-        precio_texto = ctk.CTkLabel(self, text="precio", font=font1)
-        año_fabricacion_texto = ctk.CTkLabel(self, text="año de fabricacion", font=font1)
-        caballos_texto = ctk.CTkLabel(self, text="caballos de fuerza", font=font1)
-        capacidad_texto = ctk.CTkLabel(self, text="capacidad", font=font1)
-        peso_texto = ctk.CTkLabel(self, text="peso", font=font1)
-        consumo_texto = ctk.CTkLabel(self, text="consumo", font=font1)
-        largo_texto = ctk.CTkLabel(self, text="largo", font=font1)
-        ancho_texto = ctk.CTkLabel(self, text="ancho", font=font1)
-        alto_texto = ctk.CTkLabel(self, text="alto", font=font1)
-        descripcion_texto = ctk.CTkLabel(self, text="descripcion", font=font1)
-        imagen_texto = ctk.CTkLabel(self, text="imagen", font=font1)
+        modelo_texto = ctk.CTkLabel(self, text="Modelo", font=font1)
+        precio_texto = ctk.CTkLabel(self, text="Precio", font=font1)
+        año_fabricacion_texto = ctk.CTkLabel(self, text="Año de fabricacion", font=font1)
+        caballos_texto = ctk.CTkLabel(self, text="Caballos de fuerza", font=font1)
+        capacidad_texto = ctk.CTkLabel(self, text="Capacidad", font=font1)
+        peso_texto = ctk.CTkLabel(self, text="Peso", font=font1)
+        consumo_texto = ctk.CTkLabel(self, text="Consumo", font=font1)
+        largo_texto = ctk.CTkLabel(self, text="Largo", font=font1)
+        ancho_texto = ctk.CTkLabel(self, text="Ancho", font=font1)
+        alto_texto = ctk.CTkLabel(self, text="Alto", font=font1)
+        descripcion_texto = ctk.CTkLabel(self, text="Descripcion", font=font1)
+        imagen_texto = ctk.CTkLabel(self, text="Imagen", font=font1)
 
-        subir_datos = ctk.CTkButton(self, text="agregar", font=font1, width=200, height=50, command=lambda: self.subir_auto(marca))
+        subir_datos = ctk.CTkButton(self, text="Agregar", font=font1, width=200, height=50, command=lambda: self.subir_auto(marca))
 
         modelo_texto.place(relx=0.23, rely=0.2, anchor="nw")
         self.__modelo_entrada.place(relx=0.23, rely=0.23, anchor="nw")
@@ -294,9 +346,10 @@ class Menu_gui_autos(ctk.CTkFrame):
         largo = self.__largo_entrada.get()
         ancho = self.__ancho_entrada.get()
         alto = self.__alto_entrada.get()
-        descripcion = self.__descripcion_entrada.get("1.0", "end")
+        descripcion = self.__descripcion_entrada.get("1.0", "end").strip()
         imagen = self._archivo
 
+        
         coche = {
             "marca" : marca,
             "modelo": modelo,
@@ -315,8 +368,52 @@ class Menu_gui_autos(ctk.CTkFrame):
             "imagen" : f"{modelo}.jpg"
         }
 
-        self.convenios.añadir_modelo(coche, imagen)
+        if "" in coche.values() or "" in coche["dimensiones"].values() or "" == imagen:
+            error = ctk.CTkLabel(self, text="rellene todos los elementos y suba la imagen")
+            error.place(relx=0.63, rely=0.8, anchor="nw")
+            
 
+        else:
+            self.convenios.añadir_modelo(coche, imagen)
+            top = self.mostrar_espera()
+            self.after(1000, top.destroy)
+            self.__auto_añadido = True
+            self.general_mostrar_autos()
+        
+    def simular_pagos(self, precio):
+        #se crea la simulacion a partir de la siguiente calse
+        self.__cotizacion = SimuladorFinanciamiento(master=self, precio_fijo=precio)
+
+    def mostrar_espera(self):
+        top = ctk.CTkToplevel(self)
+        top.title("Procesando")
+        
+        top.geometry("300x120")
+        top.resizable(False, False)
+        
+        #evitamos cualquier otra accion durante la carga
+        top.grab_set()
+        
+        #quitamos el boton de cerrar para que no lo puedan quitar accidentalmente
+        top.protocol("WM_DELETE_WINDOW", lambda: None)
+        
+        top.attributes("-topmost", True)
+    
+        top.focus_set()
+
+        label = ctk.CTkLabel(
+            top, 
+            text="Espere un momento...", 
+            font=("Arial", 16, "bold")
+        )
+        label.pack(expand=True, pady=10)
+        
+        #barra to´chidita
+        progreso = ctk.CTkProgressBar(top, mode="indeterminate", width=200)
+        progreso.pack(expand=True, pady=(0, 20))
+        progreso.start()
+        
+        return top
         
     def salir(self):
         self.destroy()
