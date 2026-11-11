@@ -21,6 +21,7 @@ class app_viauto(ctk.CTk):
     def iniciador_menu_principal(self):
         self.geometry("1500x1000")
         if self.menu_incio_sesion.acceso == "usuarios":
+            self.title("Viauto")
             self.menu_principal_usuarios()
         elif self.menu_incio_sesion.acceso == "administradores":
             self.title("Menu Administradores")
@@ -28,7 +29,8 @@ class app_viauto(ctk.CTk):
 
     def menu_principal_usuarios(self):
         self.menu_usuario = Menu_Usuario(
-            master=self,
+            master=self, 
+            inicio_sesion=self.incio_de_sesion,
             width=1500,
             height=1000
         )
@@ -39,14 +41,20 @@ class app_viauto(ctk.CTk):
         )
 
     def menu_principal_administradores(self):
-        self.menu_administradordes = principal_administradores(master=self, width=1500, height=1000)
+        self.menu_administradordes = principal_administradores(
+            master=self, 
+            inicio_sesion=self.incio_de_sesion, 
+            width=1500, 
+            height=1000
+            )
+        
         self.menu_administradordes.place(relx=0.5, rely=0.5, anchor="center")
 
 
 
 
         
-
+#corremos el programa
 if __name__ == "__main__":
     app = app_viauto()
     app.mainloop()
